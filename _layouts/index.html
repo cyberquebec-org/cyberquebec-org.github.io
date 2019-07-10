@@ -1,0 +1,24 @@
+---
+layout: default
+stylesheets:
+  - index.css
+---
+{% include image_asset.html class="banner" src="banner.webp" %}
+
+<div class="main-padding">
+    <b>
+        <p class="description">{{ page.description }}</p>
+    </b>
+
+    <div class="axes-intervention">
+        {% for axe in page.axes-intervention %}
+        <div>
+            <h2>{{ axe.nom | upcase }}</h2>
+            {% include image_asset.html class="center" src=axe.image %}
+            <div class="description-axe">
+                {{ axe.description | markdownify }}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

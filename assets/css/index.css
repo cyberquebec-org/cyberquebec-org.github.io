@@ -1,0 +1,31 @@
+.banner {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.main-padding {
+    padding: 15px;
+}
+
+.axes-intervention {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.axes-intervention>div {
+    align-self: flex-start;
+    width: 48%;
+}
+
+.axes-intervention img {
+    max-height: 50vh;
+}
+
+@media screen and (max-width : 800px) {
+    .axes-intervention>div {
+        width: 100%;
+    }
+}

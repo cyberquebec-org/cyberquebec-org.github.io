@@ -1,0 +1,58 @@
+$schema: http://json-schema.org/draft-07/schema#
+title: Source
+description: Les informations d'une source utilisée pour faire la trousse de cybersécurité
+type: object
+required:
+  - nom
+  - lien
+  - type
+  - lang
+  - content
+  - categories
+properties:
+  nom:
+    type: string
+    description: Nom de la source
+  lien:
+    type: string
+    description: URL de la source
+  type:
+    type: string
+    description: Type de la source. Chaque type est accompagné d'une description.
+    enum:
+      - gouvernement-canadien # Gouvernement du Canada 
+      - gouvernement-provincial # Gouvernement d'une province canadienne 
+      - municipalite # Municipalité canadienne ou non 
+      - universite # Université canadienne ou non
+      - gouvernement-etranger # Gouvernement étranger 
+      - organisme-international # Organisme 
+      - obnl # Organisme n'ayant pas pour but de faire du profit (attention ceci n'est pas une définition légale)
+      - obl # Organisme ayant pour but de faire du profit (attention ceci n'est pas une définition légale)
+  lang:
+    type: array
+    description: La liste des langues offertes
+    items:
+      type: string
+      description: Code de la langue définie par le standard ISO 639.2 (3 caractères et non 2 comme dans le standard ISO 639.1)
+  partenaires:
+    type: array
+    description: Partenaires de la source
+    items:
+      type: string
+      description: Nom du partenaire
+  content:
+    type: string
+    description: >
+      Commentaires écrits en markdown sur la source.
+      Éviter d'utiliser des h1 puisque c'est déjà utilisé
+      pour le nom des sources donc ça posera des problèmes de clarté.
+  categories:
+    type: array
+    description: Liste de catégories reliées au contenu de la source
+    items:
+      type: string
+      enum:
+        - individus
+        - PME
+        - fraude
+        - FAQ

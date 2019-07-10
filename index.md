@@ -1,0 +1,36 @@
+---
+layout: index
+stylesheets: 
+  - index.css
+
+description: > 
+  Le champ d’intervention de CyberQuébec est la cybersécurité, soit toutes les activités visant à protéger les personnes et les entreprises d’une utilisation malveillante de l’informatique et, particulièrement, lorsque les ressources mobilisées sont branchées à un réseau de communication.
+  En tant que Centre collégial de transfert de technologie (CCTT), les actions de CyberQuébec, s’inscrivent dans les quatre grands axes d’intervention qui sont communs aux centres du réseau Synchronex:
+
+axes-intervention: 
+  - nom: Information
+    image: axe-infos.webp
+    description: |
+      **La cybersécurité, c’est très important pour vous. Croyez-nous !**
+        * Savez-vous combien de mot de passe vous utilisez ?
+        * Avez-vous déjà réutilisé le même mot de passe sur plus d’un site à la fois ?
+        * Devez-vous partager un mot de passe avec des collaborateurs ?
+        * Connaissez-vous les impacts pour votre vie personnelle ou professionnelle des choix que vous faites tous les jours dans votre utilisation de l’internet ?
+
+      **Le risque zéro n’existe pas, mais nous pouvons aider les PME, les petites organisations et les communs des mortels à prendre conscience de leur niveau de maturité en matière de cybersécurité. Quelques solutions de base permettent aussi d’atténuer grandement le risque face aux attaques les plus courantes.**
+
+  - nom: Recherche appliquée
+    image: axe-recherche.webp
+    description: | 
+      Nous avons les ressources pour mettre en oeuvre un protocole de recherche afin de trouver une solution adéquate et durable à votre problématique. Le CCTT vous accompagne en vous mettant en relation avec des chercheurs chevronnés qui sauront mettre l’épaule à la roue pour vous permettre de faire progresser vos produits et services. 
+
+  - nom: Formation
+    image: axe-formation.webp
+    description: | 
+      Le CCTT a comme objectif de remédier à la problématique de rareté de la main d’œuvre ainsi qu’à l’absence de femmes dans le secteur en arrimant la formation scolaire avec les besoins du marché du travail.
+
+  - nom: Aide technique
+    image: axe-support.webp
+    description: |
+      Le CCTT accompagne les PME dans la l’identification de l’expertise technique dont ils ont besoin pour améliorer l’éventail des compétences de leur équipe. Autant pour les professionnels, les professeurs et les étudiants, notre écosystème innovant en cybersécurité vous permet d’accéder rapidement à l’appui technique que vous avez besoin pour appliquer une solution déjà existante.
+---

@@ -1,0 +1,33 @@
+$schema: http://json-schema.org/draft-07/schema#
+title: QuestionReponse
+description: Une question et sa réponse
+type: object
+required:
+  - question
+  - content
+  - type
+  - categories
+properties:
+  question:
+    type: string
+    description: Question en texte brut
+  content:
+    type: string
+    description: Réponse rédigée en markdown
+  public: 
+    type: string
+    description: Public visé par la question
+    enum:
+      - general
+      - individus
+      - pme
+  categories:
+    type: array
+    description: Liste de catégories reliées à la question
+    items:
+      type: string
+      enum:
+        - fraude
+        - vie-privee
+        - hammeconnage
+        - appareils

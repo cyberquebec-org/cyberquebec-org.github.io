@@ -1,0 +1,10 @@
+---
+layout: default
+stylesheets: 
+    - sources.css
+---
+<link rel="stylesheet" href="{{ 'assets/css/faq.css' | relative_url }}">
+<a href="{{ page.lien }}"><h1>{{ page.nom }}</h1></a>
+<div>
+    {{content | markdownify }}
+</div>

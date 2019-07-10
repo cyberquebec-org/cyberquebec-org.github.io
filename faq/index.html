@@ -1,0 +1,53 @@
+---
+layout: default
+stylesheets: 
+    - faq.css
+---
+<script>
+    const hiddenClass = "hidden";
+    function toggleReponse(bouton) {
+        // Obtenir la réponse.
+        let reponse = bouton.parentElement.parentElement.getElementsByClassName("reponse")[0];
+        // Si la réponse est cachée
+        if (reponse.classList.contains(hiddenClass)) {
+            // Montrer la réponse.
+            reponse.classList.remove(hiddenClass);
+            bouton.innerHTML = "-";
+        } else {
+            // Cacher la réponse.
+            reponse.classList.add(hiddenClass);
+            bouton.innerHTML = "+";
+        }
+    }
+</script>
+
+<div>
+    <input type="text">
+</div>
+
+{% assign sections = "General, Individus, PME" | split: ", " %}
+{% for section in sections %}
+    <div>
+        {% assign section-lower = section | downcase %}
+        <h1>{{ section }}</h1>
+        {% for element in site.pages %}
+            {% if element.type == section-lower %}
+                {% assign question-id = element.question | slugify %}
+                <div id="{{ question-id }}" class="element">
+                    <div class="horizontal">
+                        <button class="toggle-reponse" onclick="toggleReponse(this)">+</button>
+                        <a href="{{ question-id | prepend: "#" }}">
+                            <h2 class="question">{{ element.question }}</h2>
+                        </a>
+                    </div>
+                    <div class="reponse hidden">{{ element.content | markdownify }}</div>
+                    <div class="categories">
+                        {% for categorie in element.categories %}
+                        <p>{{ categorie }}</p>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endfor %}

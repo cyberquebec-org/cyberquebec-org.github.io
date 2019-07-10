@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body>* {
+    flex-grow: 0;
+}
+
+.home-image {
+    max-height: 10vh;
+    max-width: 80%;
+    padding: 20px;
+    object-fit: contain;
+}
+
+nav {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    background: #203b8f;
+    color: white;
+}
+nav a {
+    color: inherit;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.section {
+    padding: 10px;
+}
+.sous-sections {
+    visibility: collapse;
+}
+
+main {
+    flex-grow: 1;
+    margin: 20px 0;
+}
+
+footer {
+    padding: 8px;
+    background: #333;
+    color: white;
+    font-family: roboto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* horizontally center an element like a div or an img */
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+/* horizontally stack elements */
+.horizontal>* {
+    display: inline-block;
+}
+
+blockquote {
+    border-left: 2px solid grey;
+    padding-left: 20px;
+    margin: 0;
+    color: grey;
+}

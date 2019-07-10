@@ -1,0 +1,29 @@
+title: CyberQuébec.org
+author: CCTT en cybersécurité du Cégep de l'Outaouais
+description: CCTT en cybersécurité du Cégep de l'Outaouais
+
+url: https://cyberquebec.org
+permalink: pretty
+exclude:
+  - README.md
+keep_files:
+  - css
+
+# Valeurs par défaut pour front matters
+defaults:
+  - scope:
+      path: "" # Tous les fichiers du projet
+    values:
+      layout: default
+  - scope:
+      path: "_posts"
+    values:
+      layout: article
+  - scope:
+      path: "faq"
+    values:
+      layout: faq
+  - scope:
+      path: "sources"
+    values:
+      layout: source 

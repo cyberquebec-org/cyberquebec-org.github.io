@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="author" content="{{ site.author }}">
+
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
+    {% for stylesheet in page.stylesheets %}
+        <link rel="stylesheet" href="{{ stylesheet | prepend: 'assets/css/' | relative_url }}">
+    {% endfor %}
+    <link rel="shortcut icon" type="image/png" href="{{ 'assets/images/shortcut.ico' | relative_url }}" sizes="32x32">
+    <link rel="canonical" href="{{ page.url | replace: 'index.html','' | absolute_url }}">
+</head>
+<body>
+    <header>
+        {% include image_asset.html src="cyberqc.webp" class="home-image center" %}
+    </header>
+    <nav>
+        {% for section in site.data.barre-outils %}
+            <div class="section">
+                <a href="{{ section.lien }}">{{section.nom}}</a>
+                {%- comment -%} {% if section.items.size > 0 %}
+                    <div class="sous-sections">
+                        {% for sous-section in section.items %}
+                            <a href="{{sous-section.lien}}">{{sous-section.nom}}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %} {%- endcomment -%}
+            </div>
+        {% endfor %}
+    </nav>
+    <main>
+        {{ content }}
+    </main>
+    <footer style="text-align: center;">
+        &copy; {{ "now" | date: "%Y" }} Cégep de l'Outaouais - Tous droits réservés.
+    </footer>
+</body>
+</html>

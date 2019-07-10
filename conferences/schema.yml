@@ -1,0 +1,68 @@
+$schema: http://json-schema.org/draft-07/schema#
+title: Conférence
+description: Informations sur une conférence
+type: object
+required:
+  - nom
+  - lien
+  - lang
+  - date
+  - lieu
+  - content
+  - partenaires
+  - categories
+properties:
+  nom:
+    type: string
+    description: Nom de la source
+  lien:
+    type: string
+    description: URL de la source
+  lang:
+    type: array
+    description: La liste des langues offertes
+    items:
+      type: string
+      description: Code de la langue définie par le standard ISO 639.2 (3 caractères et non 2 comme dans le standard ISO 639.1)
+  date: 
+    oneOf:
+      - type: object
+        properties: 
+          debut: 
+            type: string
+            description: Date de début
+          fin: 
+            type: string
+            description: Date de fin
+      - type: array
+        items: 
+          type: string
+            type: string
+            description: Date de chaque journée de la conférence
+      - type: string
+        description: Date de la conférence
+  lieu: 
+    type: string 
+    description: Adresse du lieu de la conférence
+  partenaires:
+    type: array
+    description: Partenaires de la conférence
+    items:
+      type: string
+      description: Nom du partenaire
+  content:
+    type: string
+    description: >
+      Commentaires écrits en markdown sur la source.
+      Éviter d'utiliser des h1 puisque c'est déjà utilisé
+      pour le nom des sources donc ça posera des problèmes de clarté.
+  categories:
+    type: array
+    description: Liste de catégories dont la source fait partie
+    items:
+      type: string
+      enum:
+        - individus
+        - PME
+        - fraude
+        - FAQ
