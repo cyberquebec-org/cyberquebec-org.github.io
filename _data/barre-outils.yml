@@ -3,13 +3,13 @@
 - nom: À Propos
   lien: /a-propos
 - nom: Trousse de cybersécurité
-  lien: \#
+  lien: /trousse
   items: 
-    - nom: bonne pratiques
-      lien: /pratiques
-    - nom: risques
-      lien: /risques
-    - nom: faq
-      lien: /faq
-    - nom: sources
-      lien: /sources
+    - nom: Bonne pratiques
+      lien: /trousse/pratiques
+    - nom: Risques
+      lien: /trousse/risques
+    - nom: FAQ
+      lien: /trousse/faq
+    - nom: Sources
+      lien: /trousse/sources
