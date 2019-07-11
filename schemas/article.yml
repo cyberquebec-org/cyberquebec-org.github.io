@@ -1,0 +1,32 @@
+$schema: http://json-schema.org/draft-07/schema#
+title: Article
+description: Informations sur une conférence
+type: object
+required:
+  - date 
+  - nom 
+  - resume 
+  - content
+  - image 
+  - categories 
+properties:
+  date: 
+      type: string
+      description: Date de publication de l'article
+  nom:
+    type: string
+    description: Nom de la source
+  resume: 
+    type: string
+    description: Résumé de l'article, rédigé en texte brut
+  content: 
+    type: string
+    description: Contenu de l'article, rédigé en Markdown
+  image: 
+    type: string
+    description: Lien vers l'image d'entête pour l'article
+  categories:
+    type: array
+    description: Liste de catégories reliées à l'article
+    items:
+      type: string
