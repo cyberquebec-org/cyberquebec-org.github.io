@@ -3,12 +3,46 @@ author: CCTT en cybersécurité du Cégep de l'Outaouais
 description: CCTT en cybersécurité du Cégep de l'Outaouais
 
 url: https://cyberquebec.org
+basePath: /trousse
 permalink: pretty
 exclude:
   - README.md
   - schemas
 keep_files:
   - css
+strict-front-matter: true
+
+collections:
+  sources: 
+    layout: source
+    output: true
+    permalink: /trousse/sources/:path/ # Source: https://ben.balter.com/2015/02/20/jekyll-collections/
+                                       # Il faut définitivement ajouter cela à la documentation des collections dans jekyll
+    section: trousse
+    sous-section: sources
+  pratiques: 
+    layout: pratique
+    output: true
+    permalink: /trousse/pratiques/:path/
+    section: trousse
+    sous-section: pratiques
+  risques: 
+    layout: risques
+    output: true
+    permalink: /trousse/risques/:path/
+    section: trousse
+    sous-section: risques
+  faq: 
+    layout: faq
+    output: false
+    section: trousse
+    sous-section: faq
+  conferences: 
+    layout: conferences
+    output: true
+    permalink: /idk/conferences/:path/
+    section: idk #TODO
+    sous-section: conferences
 
 # Valeurs par défaut pour front matters
 defaults:
@@ -21,10 +55,10 @@ defaults:
     values:
       layout: article
   - scope:
-      path: "faq"
+      path: "_faq"
     values:
       layout: faq
   - scope:
-      path: "sources"
+      path: "_sources"
     values:
       layout: source 

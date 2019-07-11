@@ -25,6 +25,26 @@ stylesheets:
     <input type="text">
 </div>
 
+{% assign element = site.data.questions.individus.comment-effacer-des-images-de-moi-sur-internet %}
+<div>
+    {% assign question-id = element.question | slugify %}
+    <div id="{{ question-id }}" class="element">
+        <div class="horizontal">
+            <button class="toggle-reponse" onclick="toggleReponse(this)">+</button>
+            <a href="{{ question-id | prepend: "#" }}">
+                <h2 class="question">{{ element.question }}</h2>
+            </a>
+        </div>
+        <div class="reponse hidden">{{ element.content | markdownify }}</div>
+        <div class="categories">
+            {% for categorie in element.categories %}
+            <p>{{ categorie }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{%- comment -%}
 {% assign sections = "General, Individus, PME" | split: ", " %}
 {% for section in sections %}
     <div>
@@ -51,3 +71,4 @@ stylesheets:
         {% endfor %}
     </div>
 {% endfor %}
+{%- endcomment -%}

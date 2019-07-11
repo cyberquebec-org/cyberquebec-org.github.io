@@ -3,7 +3,7 @@ nom: SéQCure
 lien: https://seqcure.org/
 lang: 
     - fr
-date: 8 avril 2019
+dates: 8 avril 2019
 lieu: > 
     Terminal - Port de Québec
     84 Rue Dalhousie

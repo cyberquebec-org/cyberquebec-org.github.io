@@ -20,9 +20,9 @@ Le GCA est un adepte de DMARC qui sert à prévenir des tiers d'envoyer des cour
 Ils ont également créé [un outils open source](https://github.com/GlobalCyberAlliance/GCADMARCRiskScanner) pour vérifier si un domaine d'adresse courriel utilise [DMARC](https://dmarc.org/), [DKIP](http://www.dkim.org/) et/ou [SPF](https://tools.ietf.org/html/rfc7208) qui peut être utilisé à partir de [ce lien](https://dmarcguide.globalcyberalliance.org/).
 
 ### [Quad9 DNS](https://www.globalcyberalliance.org/quad9/)
-[Quad9](https://quad9.net/) est un service DNS à l'adresse 9.9.9.9 appuyé par [IBM](https://www.ibm.com), [PCH](https://www.pch.net/) et [GCA].  
+[Quad9](https://quad9.net/) est un service DNS à l'adresse `9.9.9.9` appuyé par [IBM](https://www.ibm.com), [PCH](https://www.pch.net/) et [GCA].  
 Il a pour but de bloquer les domaines représentant des menaces connus afin de protéger les utilisateurs.
-Des instructions de configuration de [Quad9](https://quad9.net/) sur [MacOS](https://quad9.net/apple/) et [Windows](https://quad9.net/microsoft/).
+Des instructions de configuration de [Quad9](https://quad9.net/) sur [MacOS](https://quad9.net/apple/) et [Windows](https://quad9.net/microsoft/).  
 **TODO configurer un DNS sur Android et iOS. Il n'y a pas de moyen de changer le DNS global à partir des paramètres de le faire au niveau global avant Android P**
 
 ### Trousses de cybersécurité

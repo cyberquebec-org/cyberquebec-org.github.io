@@ -6,7 +6,7 @@ required:
   - nom
   - lien
   - lang
-  - date
+  - dates
   - lieu
   - content
   - partenaires
@@ -24,7 +24,7 @@ properties:
     items:
       type: string
       description: Code de la langue définie par le standard ISO 639.2 (3 caractères et non 2 comme dans le standard ISO 639.1)
-  date: 
+  dates: 
     oneOf:
       - type: object
         properties: 

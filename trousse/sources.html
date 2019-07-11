@@ -1,0 +1,14 @@
+---
+layout: default
+stylesheets: 
+    - sources.css
+---
+<div>
+    <input type="text">
+</div>
+{% for source in site.sources %}
+    <a href="{{ source.url }}">
+        <h1>{{ source.nom }}</h1>
+        <a href="{{ source.lien }}">{{ source.lien }}</a>
+    </a>
+{% endfor %}
