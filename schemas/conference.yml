@@ -37,8 +37,7 @@ properties:
       - type: array
         items: 
           type: string
-            type: string
-            description: Date de chaque journée de la conférence
+          description: Date de chaque journée de la conférence
       - type: string
         description: Date de la conférence
   lieu: 

@@ -6,6 +6,7 @@ url: https://cyberquebec.org
 permalink: pretty
 exclude:
   - README.md
+  - schemas
 keep_files:
   - css
 
