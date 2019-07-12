@@ -10,6 +10,11 @@ body>* {
     flex-grow: 0;
 }
 
+body * {
+    overflow: auto;
+    box-sizing: border-box;
+}
+
 .home-image {
     max-height: 10vh;
     max-width: 80%;
