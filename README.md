@@ -44,6 +44,7 @@ Le minifier utilisé est un plugin de [Jekyll] du nom de [jekyll-minifier](https
 
 [Jekyll]: https://jekyllrb.com
 [Ruby]: https://www.ruby-lang.org/en/
+[Python]: https://python.org
 [polyglot]: https://github.com/untra/polyglot
 [kramdown]: https://kramdown.gettalong.org/
 [CommonMark]: https://commonmark.org/
