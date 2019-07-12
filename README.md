@@ -24,6 +24,7 @@ Le plugin qui sera utilisé pour gérer l'internationalisation (la traduction de
 ## Génerateur de HTML pour Markdown
 [kramdown] est celui par défaut pour [Jekyll] ainsi que celui qui est utilisé en ce moment. En plus des fonctionnalités du standard Markdown, [kramdown] nous permet de [d'ajouter des classes et des IDs aux éléments](https://kramdown.gettalong.org/syntax.html#attribute-list-definitions), ce qui pourrait nous être très utile.  
 Cependant, [kramdown] ne respecte pas totalement le standard Markdown, mais pour l'utilisation que nous allons en faire, nous ne devrions pas être affectés.
+Pour le formattage du code par [kramdown], [Rouge](http://rouge.jneen.net/) (écrite en [Ruby]) est la librairie utilisée. Les classes utilisées pour le HTML du code sont les mêmes que celles utilisées par un autre formatteur de code du nom de [Pygments](http://pygments.org/) (écrit en [Ruby]). Grâce à cela, nous pouvons utiliser n'importe quel stylesheet destinée à [Pygments]. Celui utilisé à l'heure actuelle est `monokai` (le thème utilisé dans [Sublime Text](https://www.sublimetext.com/)), qui fut prit de [ce site](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) où nous pouvons choisir un autre thème.  
 
 [CommonMark] est un standard de Markdown que nous pourrions utilisé grâce à [un plugin pour Jekyll](https://github.com/jekyll/jekyll-commonmark). Ce plugin fait partie des projets des développeurs de [Jekyll] et est plus performant que [kramdown], car [CommonMark] est implémenté en [C](https://www.iso.org/standard/74528.html) alors que [kramdown] est fait en [Ruby]. Par contre, nous perdrions la fonctionnalité de pouvoir ajouter des `classes` et des `id` aux éléments HTML.
 
@@ -42,3 +43,4 @@ L'optimisation de moteurs de recherche et un groupe de techniques utilisées pou
 [polyglot]: https://github.com/untra/polyglot
 [kramdown]: https://kramdown.gettalong.org/
 [CommonMark]: https://commonmark.org/
+[Pygments]: http://pygments.org/
