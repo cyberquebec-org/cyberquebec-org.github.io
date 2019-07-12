@@ -4,10 +4,10 @@ stylesheets:
     - faq.css
 ---
 <script>
-    const hiddenClass = "hidden";
+    var hiddenClass = "hidden";
     function toggleReponse(bouton) {
         // Obtenir la réponse.
-        let reponse = bouton.parentElement.parentElement.getElementsByClassName("reponse")[0];
+        var reponse = bouton.parentElement.parentElement.getElementsByClassName("reponse")[0];
         // Si la réponse est cachée
         if (reponse.classList.contains(hiddenClass)) {
             // Montrer la réponse.
@@ -25,50 +25,28 @@ stylesheets:
     <input type="text">
 </div>
 
-{% assign element = site.data.questions.individus.comment-effacer-des-images-de-moi-sur-internet %}
-<div>
-    {% assign question-id = element.question | slugify %}
-    <div id="{{ question-id }}" class="element">
-        <div class="horizontal">
-            <button class="toggle-reponse" onclick="toggleReponse(this)">+</button>
-            <a href="{{ question-id | prepend: "#" }}">
-                <h2 class="question">{{ element.question }}</h2>
-            </a>
-        </div>
-        <div class="reponse hidden">{{ element.content | markdownify }}</div>
-        <div class="categories">
-            {% for categorie in element.categories %}
-            <p>{{ categorie }}</p>
-            {% endfor %}
-        </div>
-    </div>
-</div>
-
-{%- comment -%}
 {% assign sections = "General, Individus, PME" | split: ", " %}
 {% for section in sections %}
     <div>
         {% assign section-lower = section | downcase %}
         <h1>{{ section }}</h1>
-        {% for element in site.pages %}
-            {% if element.type == section-lower %}
-                {% assign question-id = element.question | slugify %}
-                <div id="{{ question-id }}" class="element">
-                    <div class="horizontal">
-                        <button class="toggle-reponse" onclick="toggleReponse(this)">+</button>
-                        <a href="{{ question-id | prepend: "#" }}">
-                            <h2 class="question">{{ element.question }}</h2>
-                        </a>
-                    </div>
-                    <div class="reponse hidden">{{ element.content | markdownify }}</div>
-                    <div class="categories">
-                        {% for categorie in element.categories %}
-                        <p>{{ categorie }}</p>
-                        {% endfor %}
-                    </div>
+        {% assign elements = site.faq | where: 'type', section-lower %}
+        {% for element in elements %}
+            {% assign question-id = element.path | slugify %}
+            <div id="{{ question-id }}" class="element">
+                <div class="horizontal">
+                    <button class="toggle-reponse" onclick="toggleReponse(this)">+</button>
+                    <a href="{{ question-id | prepend: "#" }}">
+                        <h2 class="question">{{ element.question }}</h2>
+                    </a>
                 </div>
-            {% endif %}
+                <div class="reponse hidden">{{ element.content | markdownify }}</div>
+                <div class="categories">
+                    {% for categorie in element.categories %}
+                    <p>{{ categorie }}</p>
+                    {% endfor %}
+                </div>
+            </div>
         {% endfor %}
     </div>
 {% endfor %}
-{%- endcomment -%}

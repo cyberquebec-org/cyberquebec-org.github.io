@@ -35,6 +35,10 @@ L'optimisation de moteurs de recherche et un groupe de techniques utilisées pou
 
 [polyglot] donne également de [bons conseils sur le SEO](https://polyglot.untra.io/en/seo/), mais ses conseils sont par rapport aux sites multilingues.
 
+## Minifier
+Un minifier est un programme qui va retirer tous les caractères qui ne sont pas nécessaires des fichiers HTML, CSS, JS et autres afin qu'ils prennent moins de place et soient envoyés plus vite et que les pages chargent plus rapidement.  
+Le minifier utilisé est un plugin de [Jekyll] du nom de [jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier), mais il n'est exécuté qu'en mode production. Ceci est une bonne chose, car ça nous permet de pouvoir lire le code source plus facilement et d'avoir accès aux commentaires dans le navigateur pour faire du déboggage lors du développement.  
+
 ## Recherche de contenu sur le site
 [lunr.js](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/) est une librairies en javascript que nous pourrions utiliser avec [Jekyll] pour que les utilisateurs puissent chercher dans le contenu de la trousse de cybersécurité ou dans les articles.
 

@@ -62,3 +62,6 @@ defaults:
       path: "_sources"
     values:
       layout: source 
+
+plugins: 
+  - jekyll-minifier
