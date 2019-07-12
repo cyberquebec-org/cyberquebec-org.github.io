@@ -1,6 +1,31 @@
 # CyberQuebec.org [WIP]
 Pour des raisons de sécurité et de performances, le site internet de CyberQuebec.org utilise [Jekyll], un générateur de sites statiques.
 
+# Comment développer le site localement
+## Installer [Jekyll] et [Bundler]
+Pour commencer, vous allez devoir installer [Ruby]. Pour ce faire, allez voir [la documentation](https://www.ruby-lang.org/fr/documentation/installation) qui donne des instruction d'installation pour Linux (Debian, Ubuntu, CentOS, Fedora, RHEL, Gentoo et Arch Linux), MacOS, Windows, Solaris et OpenIndiana.  
+
+[Jekyll] et [Bundler] peuvent être installés avec la commande `gem install jekyll bundler` à exécuter dans un terminal. **Attention, vous aurez probablement besoin des droits d'administrateurs pour exécuter cette commande.**  
+
+## Cloner le projet avec Git
+Si vous n'avez pas déjà Git d'installé, vous pouvez l'obtenir pour Linux/Unix, MacOS et Windows [ici](https://git-scm.com/downloads). Une fois installé, [configurez votre nom et votre courriel](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git) avant de continuer.  
+
+Ensuite, vous pouvez cloner le projet à l'aide de la commande `git clone https://github.com/cyberquebec-org/cyberquebec-org.github.io`. Cela créera un nouveau dossier du nom de `cyberquebec-org.github.io` avec tout le code source du site dans le répertoire où vous avez exécuté la commande.
+
+## Installer les dépendances
+Grâce à [Bundler], toutes les dépendances du projet peuvent être installées en exécutant `bundle install`.  
+
+## Ouvrir un serveur pour faire du développement
+Lorsque vous développez le site, vous pouvez exécuter un serveur avec la commande `bundle exec jekyll serve -wol`.  
+Par défaut, il ouvrira le port `4000` à l'adresse `127.0.0.1:4000` que vous pouvez entrer dans un navigateur Web pour voir le site.  
+L'argument `-wol` fait en sorte que [Jekyll]: 
+* Ouvre automatiquement votre navigateur par défaut
+* Regénère automatiquement les pages modifiées lorsque vous enregistrez des fichiers (peut importe l'éditeur)
+* Rafraîchie les pages ouvertes dans votre navigateur lorsque des pages sont regénérées
+
+## Générer le site pour la production
+Vous pourriez exécuter le serveur et copier le répertoire `_site`, mais générer le site en mode production nous donne certains avantage dont l'exécution de [jekyll-minifier] pour réduire la taille des fichiers. La commande `JEKYLL_ENV=production bundle exec jekyll build` permet de faire cela. Le site généré sera dans le dossier `_site`.
+
 # License
 Pour l'instant, ce projet n'a pas de license, mais il reste tout de même la propriété de CyberQuebec.org. Le dossier `assets/images` n'a pas été inclut dans le code source distribué pour des raisons de droits d'auteur.
 
@@ -43,6 +68,7 @@ Le minifier utilisé est un plugin de [Jekyll] du nom de [jekyll-minifier](https
 [lunr.js](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/) est une librairies en javascript que nous pourrions utiliser avec [Jekyll] pour que les utilisateurs puissent chercher dans le contenu de la trousse de cybersécurité ou dans les articles.
 
 [Jekyll]: https://jekyllrb.com
+[Bundler]: https://bundler.io/
 [Ruby]: https://www.ruby-lang.org/en/
 [Python]: https://python.org
 [polyglot]: https://github.com/untra/polyglot
