@@ -25,12 +25,14 @@ stylesheets:
     <input type="text">
 </div>
 
-{% assign sections = "General, Individus, PME" | split: ", " %}
-{% for section in sections %}
+{% for section in site.data.sections-faq %}
     <div>
-        {% assign section-lower = section | downcase %}
-        <h1>{{ section }}</h1>
-        {% assign elements = site.faq | where: 'type', section-lower %}
+        <h1>{{ section.nom }}</h1>
+        {% if section.commentaire %}
+            <p><strong>{{ section.commentaire }}</strong></p>
+        {% endif %}
+
+        {% assign elements = site.faq | where: 'cible', section.cible %}
         {% for element in elements %}
             {% assign question-id = element.path | slugify %}
             <div id="{{ question-id }}" class="element">

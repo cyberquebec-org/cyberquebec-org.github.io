@@ -1,0 +1,9 @@
+- nom: Général
+  cible: general
+- nom: Individus
+  cible: individus
+- nom: Petites et moyennes entreprises
+  cible: pme
+  commentaire: >
+    Il est à noter que toutes les questions de la section individus 
+    s'appliquent aussi aux PMEs
