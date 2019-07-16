@@ -1,6 +1,6 @@
 ---
 question: Comment effacer des images de moi sur Internet?
-type: individus
+cible: individus
 categories: 
     - vie-privee
 ---

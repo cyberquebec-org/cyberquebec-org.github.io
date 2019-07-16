@@ -1,6 +1,6 @@
 ---
 question: Comment se protéger sur les réseaux sociaux
-type: individus
+cible: individus
 categories:
     - vie-privee
     - fraude

@@ -1,6 +1,6 @@
 ---
 question: Qu'est-ce que la cybersécurité?
-type: general
+cible: general
 categories: []
 ---
 La cybersécurité est...

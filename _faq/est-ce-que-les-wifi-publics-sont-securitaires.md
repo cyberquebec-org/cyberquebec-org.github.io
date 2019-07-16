@@ -1,6 +1,6 @@
 ---
 question: Est-ce que les réseaux WiFi publiques sont sécuritaires?
-type: general
+cible: general
 categories: 
     - fraude
 ---

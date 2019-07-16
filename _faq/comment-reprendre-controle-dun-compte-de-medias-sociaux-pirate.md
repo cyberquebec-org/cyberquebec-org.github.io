@@ -1,6 +1,6 @@
 ---
 question: Comment reprendre contrôle de mon compte de médias-sociaux qui a été piraté?
-type: individus
+cible: individus
 categories: 
     - fraude
     - vie-privee
