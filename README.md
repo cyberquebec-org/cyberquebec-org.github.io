@@ -68,6 +68,8 @@ L'optimisation de moteurs de recherche et un groupe de techniques utilisées pou
 
 [Jekyll SEO](https://github.com/jekyll/jekyll-seo-tag) est un plugin pour [Jekyll]
 
+[jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap) permet de générer un fichier [sitemap.xml](https://www.sitemaps.org/protocol.html) pour les moteurs de recherches. Ce fichier contient des liens vers chaque page du site, afin qu'un moteur de recherche puisse trouver le site de cyberquébec et utiliser ce site pour facilement indexer toutes ses pages.
+
 [polyglot] donne également de [bons conseils sur le SEO](https://polyglot.untra.io/en/seo/), mais ses conseils sont par rapport aux sites multilingues.
 
 ## Minifier

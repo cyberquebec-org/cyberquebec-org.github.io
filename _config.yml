@@ -61,3 +61,4 @@ defaults:
 
 plugins: 
   - jekyll-minifier
+  - jekyll-sitemap
