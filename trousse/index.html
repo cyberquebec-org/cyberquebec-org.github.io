@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
-{% for sous-section in site.data.barre-outils[2].items %}
+{% for sous-section in site.data.barre-outils[0].items %}
     <a href="{{ sous-section.lien }}">{{ sous-section.nom }}</a><br>
 {% endfor %}
