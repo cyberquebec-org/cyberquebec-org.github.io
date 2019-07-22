@@ -55,10 +55,6 @@ defaults:
     values:
       layout: article
   - scope:
-      path: "_faq"
-    values:
-      layout: faq
-  - scope:
       path: "_sources"
     values:
       layout: source 
