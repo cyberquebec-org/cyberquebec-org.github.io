@@ -5,19 +5,35 @@ stylesheets:
 ---
 <script>
     var hiddenClass = "hidden";
+    var plusClass = "fa-plus";
+    var minusClass = "fa-minus";
     function toggleReponse(bouton) {
+        var icone = bouton.children[0];
+
         // Obtenir la réponse.
         var reponse = bouton.parentElement.parentElement.getElementsByClassName("reponse")[0];
+
+        var removeBtnClass;
+        var addBtnClass;
+
         // Si la réponse est cachée
         if (reponse.classList.contains(hiddenClass)) {
             // Montrer la réponse.
             reponse.classList.remove(hiddenClass);
-            bouton.innerHTML = "-";
+            
+            removeBtnClass = plusClass;
+            addBtnClass = minusClass;
         } else {
             // Cacher la réponse.
             reponse.classList.add(hiddenClass);
-            bouton.innerHTML = "+";
+            
+            removeBtnClass = minusClass;
+            addBtnClass = plusClass;
         }
+
+        // Changer l'icône du bouton.
+        icone.classList.remove(removeBtnClass);
+        icone.classList.add(addBtnClass);
     }
 </script>
 
@@ -27,25 +43,27 @@ stylesheets:
 
 {% for section in site.data.sections-faq %}
     <div>
-        <h1>{{ section.nom }}</h1>
+        <h1 class="mt-3">{{ section.nom }}</h1>
         {% if section.commentaire %}
             <p><strong>{{ section.commentaire }}</strong></p>
         {% endif %}
 
         {% assign elements = site.faq | where: 'cible', section.cible %}
         {% for element in elements %}
-            {% assign question-id = element.path | slugify %}
-            <div id="{{ question-id }}" class="element">
-                <div class="horizontal">
-                    <button class="toggle-reponse" onclick="toggleReponse(this)">+</button>
-                    <a href="{{ question-id | prepend: "#" }}">
+            {% assign question-id = element.path | split: '/' | last | split: '.' | first | slugify %}
+            <div id="{{ question-id }}" class="element mb-3">
+                <div class="d-flex align-items-center">
+                    <button class="btn btn-primary btn-sm mr-2" onclick="toggleReponse(this)">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                    <a href="#{{ question-id }}">
                         <h2 class="question">{{ element.question }}</h2>
                     </a>
                 </div>
-                <div class="reponse hidden">{{ element.content | markdownify }}</div>
-                <div class="categories">
+                <div class="reponse overflow-hidden hidden">{{ element.content | markdownify }}</div>
+                <div class="overflowy-auto">
                     {% for categorie in element.categories %}
-                    <p>{{ categorie }}</p>
+                    <span class="badge badge-info">{{ categorie }}</span>
                     {% endfor %}
                 </div>
             </div>

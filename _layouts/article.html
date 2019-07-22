@@ -3,6 +3,11 @@ layout: default
 stylesheets:
     - article.css
 ---
-<h1>{{ page.titre }}</h1>
-<p class="resume">{{ page.resume }}</p>
-<div class="contenu-article">{{ page.content | markdownify }}</h1>
+<div class="container-fluid px-0">
+    <div class="row justify-content-center bg-secondary">
+        <img class="col-12 col-md-8" src="{{ 'assets/images/banner.webp' | relative_url }}">
+        <p class="col-10 col-md-4 px-2 py-3 lead my-auto">{{ page.resume }}</p>
+    </div>
+</div>
+<h1 class="px-2 py-1">{{ page.titre }}</h1>
+<div class="container">{{ page.content | markdownify }}</div>

@@ -1,0 +1,18 @@
+---
+---
+
+main {
+    padding: 16px;
+}
+
+.hidden {
+    height: 0px;
+}
+
+.reponse {
+    margin-left: 38px;
+}
+
+:target .reponse {
+    height: auto;
+}

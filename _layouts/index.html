@@ -3,19 +3,17 @@ layout: default
 stylesheets:
   - index.css
 ---
-{% include image_asset.html class="banner" src="banner.webp" %}
-
-<div class="main-padding">
-    <b>
-        <p class="description">{{ page.description }}</p>
-    </b>
-
-    <div class="axes-intervention">
+{% include image_asset.html class="w-100 banner" src="banner.webp" %}
+<div class="container-fluid">
+    <div class="row justify-content-around">
+        <p class="lead mt-3 mb-n3 col-12 col-lg-8">{{ page.description }}</p>
+    </div>
+    <div class="row justify-content-around">
         {% for axe in page.axes-intervention %}
-        <div>
+        <div class="col-12 col-lg-6 p-5">
             <h2>{{ axe.nom | upcase }}</h2>
-            {% include image_asset.html class="center" src=axe.image %}
-            <div class="description-axe">
+            {% include image_asset.html class="d-block mx-auto" src=axe.image %}
+            <div>
                 {{ axe.description | markdownify }}
             </div>
         </div>

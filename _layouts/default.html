@@ -20,30 +20,83 @@
     <link rel="canonical" href="{{ page.url | replace: 'index.html','' | absolute_url }}">
 </head>
 <body>
-    <header>
-        {% include image_asset.html src="cyberqc.webp" class="home-image center" %}
-    </header>
-    <nav>
-        {% for section in site.data.barre-outils %}
-            <div class="section">
-                <a href="{{ section.lien }}">{{section.nom}}</a>
-                {%- comment -%} {% if section.items.size > 0 %}
-                    <div class="sous-sections">
-                        {% for sous-section in section.items %}
-                            <a href="{{sous-section.lien}}">{{sous-section.nom}}</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">
+            <img src="{{ 'assets/images/cyberqc.webp' | relative_url }}" alt="CyberQuebec.org" class="brand-image">
+        </a>
+
+        {%- if jekyll.environment != "production" -%}
+            <a class="badge badge-warning mr-auto" href="https://github.com/cyberquebec-org/cyberquebec-org.github.io">
+                DEV
+            </a>
+        {%- endif -%}
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                {% for section in site.data.barre-outils %}
+                    {% if section.items.size > 0 %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="{{ section.nom }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ section.nom }}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="{{ section.nom }}Dropdown">
+                        {% for item in section.items %}
+                            {% if item.nom != '|' %}
+                                <a class="dropdown-item" href="{{ item.lien }}">{{ item.nom }}</a>
+                            {% else %}
+                                <div class="dropdown-divider"></div>
+                            {% endif %}
+                        {% endfor %}
+                        </div>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ section.lien }}">{{ section.nom }}</a>
+                    </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+
+        {% if site.active_lang == 'fr' %}
+            <a href=" {{ page.url | prepend: 'en' | relative_url }}" class="nav-link">EN</a>
+        {% else %}
+            <a href=" {{ page.url | remove_first: 'en' | relative_url }}" class="nav-link">FR</a>
+        {% endif %}
+    </nav>
+
+    <div class="wrap d-flex flex-column">
+        <main class="flex-grow-1">
+            {{ content }}
+        </main>
+        <footer class="bg-primary">
+            <div class="container my-3 ml-auto" style="list-style: none;">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md text-center py-3 my-auto">
+                        {% for social in site.data.social %}
+                        <a href="{{ social.lien }}" class="fa {{ social.icone }} text-light social"></a>
                         {% endfor %}
                     </div>
-                {% endif %} {%- endcomment -%}
-            </div>
-        {% endfor %}
-    </nav>
-    <main>
-        {{ content }}
-    </main>
-    <footer style="text-align: center;">
-        &copy; {{ "now" | date: "%Y" }} Cégep de l'Outaouais - Tous droits réservés.
-    </footer>
 
+                    {% for section in site.data.map %}
+                    <div class="col d-flex flex-column">
+                        <a class="lead text-light text-center text-md-right" href="{{ section.lien | relative_url }}">{{ section.nom }}</a>
+                        {% for sous-section in section.items %}
+                        <a class="text-light text-center text-md-right" href="{{ sous-section.lien | relative_url }}">{{ sous-section.nom }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <p class="mb-0 px-2 py-1 text-center text-light" style="background: rgba(0, 0, 0, 0.50);">
+                &copy; {{ "now" | date: "%Y" }} {{ site.data.copyright }}
+            </p>
+        </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
