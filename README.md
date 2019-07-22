@@ -36,6 +36,12 @@ Cette section est une liste non-exhaustive des projets qui sont et pourraient ê
 [Jekyll] est le générateur de sites statiques utilisé à l'heure actuelle pour faire le site du CCTT. Il a l'avantage d'être déjà supporté nativement par GitHub pages, d'être le plus populaire et d'avoir un système de plugin avec une communauté qui l'entoure.
 
 [Middleman](https://middlemanapp.com/) est cependant aussi considéré à l'heure actuelle, car il possède également un système de plugin (moins développé que [Jekyll]), il est beaucoup plus flexible, on peut l'étendre avec du Ruby, il supporte l'internationalisation sans utiliser de plugin et il supporte [les tests Cucumber](https://cucumber.io/) qui pourraient être utilisés pour valider les [JSON Schema](https://json-schema.org/) et s'assurer que les traductions de toutes les pages sont faites. Il est cependant à noter qu'il n'est pas officiellement supporté par GitHub Pages et que sa flexibilité le rend plus difficile d'utilisation pour les gens ne connaissant pas le Ruby.
+## Style
+Pour donner du style au site, [Bootstrap] est utilisé. C'est un outils open source qui peut être utilisé pour donner du style aux sites internets utilisant du [HTML], du [CSS] et du [JS]. Elle est elle-même faite en [JS] et en [SASS] et les librairies javascript [JQuery (slim build)](https://jquery.com/) et [Popper.js](https://popper.js.org/).  
+
+[Bootstrap] a d'abord été choisi, car c'est la librairie la plus populaire de ce genre et qu'elle est compatible avec tous les navigateurs web.  
+Elle possède un système de grille et pleins de classes qui nous permettent de facilement designer notre site pour qu'il soit compatible avec les écrans de toutes les tailles.  
+Le fait qu'elle utilise le SASS plutôt que le CSS est aussi un énorme avantage, puisqu'on peut modifier les valeurs des variables afin de changer les couleurs du thème de base pour celles du CCTT.  
 
 ## I18n
 Le plugin qui sera utilisé pour gérer l'internationalisation (la traduction des pages) n'est pas encore décidé. Voici les options qui sont considérées:
@@ -75,3 +81,8 @@ Le minifier utilisé est un plugin de [Jekyll] du nom de [jekyll-minifier](https
 [kramdown]: https://kramdown.gettalong.org/
 [CommonMark]: https://commonmark.org/
 [Pygments]: http://pygments.org/
+[Bootstrap]: https://getbootstrap.com
+[HTML]: https://www.w3.org/html/
+[CSS]: https://www.w3.org/Style/CSS/
+[SASS]: https://sass-lang.com/
+[JS]: https://www.ecma-international.org/publications/standards/Ecma-262.htm
