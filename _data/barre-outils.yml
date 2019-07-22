@@ -1,7 +1,3 @@
-- nom: Nous Contacter
-  lien: /contact
-- nom: À Propos
-  lien: /a-propos
 - nom: Trousse de cybersécurité
   lien: /trousse
   items: 
@@ -13,3 +9,7 @@
       lien: /trousse/faq
     - nom: Sources
       lien: /trousse/sources
+- nom: Nous Joindre
+  lien: /contact
+- nom: À Propos
+  lien: /a-propos
