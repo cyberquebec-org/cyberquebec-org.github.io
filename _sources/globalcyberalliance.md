@@ -36,9 +36,10 @@ Disponible seulement en anglais, cette trousse financée par [MasterCard](https:
 #### [Trousse de cybersécurité pour les éléctions](https://gcatoolkit.org/elections/) 
 TODO
 
-#### [McScrapy](https://www.globalcyberalliance.org/mcscrapy/)
-[GCA] a aussi créé [l'outils open source](https://github.com/GlobalCyberAlliance/GCAMcScrapy) (McScrapy)[https://www.globalcyberalliance.org/mcscrapy/]
-McScrapy parcours un site internet dynamique et enregistre toutes ses pages pour en faire un site statique. Il explore tous les liens et s'assure qu'ils sont sécuritaires.  
+#### [McScrapy]
+[GCA] a aussi créé [l'outils open source](https://github.com/GlobalCyberAlliance/GCAMcScrapy) [McScrapy].  
+ce programme parcours un site Internet dynamique et enregistre toutes ses pages pour en faire un site statique. Il explore tous les liens et s'assure qu'ils sont sécuritaires.  
 L'outils a été fait pour pouvoir utiliser les outils CMS en toute sécurité. La combinaison de [PHP](https://php.net/) et de [Javascript](https://www.ecma-international.org/publications/standards/Ecma-262.htm) qu'ils utilise est la cause de nombreuses vulnérabilités. WordPress, par exemple, a près de 2500 vulnérabilités.  
 
 [GCA]: https://www.globalcyberalliance.org
+[McScrapy]: https://www.globalcyberalliance.org/mcscrapy/

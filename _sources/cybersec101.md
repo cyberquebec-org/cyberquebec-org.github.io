@@ -6,7 +6,7 @@ partenaires:
     - SERENE-RISC
 categories: []
 ---
-Site d'apprentissage interactif de la cybersécurité du SERENE-RISC destinée au grand public, mais plus spécifiquement aux bibliothèques.  
+Site d'apprentissage interactif de la cybersécurité du SERENE-RISC destinée au grand public, mais plus spécifiquement aux personnel des bibliothèques.  
 
 Il comporte de nombreux modules qui présentent les risques et les bonnes pratiques pour s'en protéger.  
 

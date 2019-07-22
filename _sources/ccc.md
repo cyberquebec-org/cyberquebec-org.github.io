@@ -15,10 +15,16 @@ Formé en 2018, il résulte de la [Stratégie nationale de cybersécurité](http
 Depuis il a mis sur pied une campagne de cybersécurité pour les individus et les PMEs du nom de [Pensez cybersécurité](#TODO-liens vers notre source pensezcybesécurité) qui contient beaucoup de ressources, de conseils et de publications sur la cybersécurité.  
 Son personnel agit également en tant qu'équipe d’intervention en cas d’urgence informatique et en cas d'incidents de cybersécurité (CERT et CIRT) pour le gouvernement du Canada.
 
-* Offre un service de validation des modules cryptographiques https://cyber.gc.ca/fr/programme-de-validation-des-modules-cryptographiques-pvmc selon le standard [FIPV-123](https://csrc.nist.gov/projects/cmvp)
-* Développent le logiciel open-source [Assemblyline](https://cyber.gc.ca/fr/chaine-de-montage-assemblyline) qui permet l'analyse de fichiers et la mise en place de mesures de sécurité.
-* [Activité interactive](https://cyber.gc.ca/sites/default/files/GTEC2014Apps/CSE-GTEC-2014_SCENARIOS/french/index.html) qui donne des bonnes habitudes à suivre en terme de cybersécurité et qui explique pourquoi les adopter en discutant des risques.
-* [Glossaire](https://cyber.gc.ca/fr/glossaire) sur la cybersécurité et de terme en liens avec le [Centre canadien pour la cybersécurité], mais pas nécessairement avec la cybersécurité.
+### [Activité interactive](https://cyber.gc.ca/sites/default/files/GTEC2014Apps/CSE-GTEC-2014_SCENARIOS/french/index.html) 
+Plusieurs activités interactives à l'intention des employés du gouvernement sont disponibles gratuitement. Elles donnent des bonnes habitudes à suivre en terme de cybersécurité et les justifie en expliquant les risques qu'elles contrent.
 
-<!-- Section Subjective -->
-> Leur glossaire s'apparente à [celui de pensezcybersécurité](https://www.pensezcybersecurite.gc.ca/cnt/rsrcs/glssr-fr.aspx), mais il manque certaines définitions, donc il vous est recommandé de consulter l'autre à la place.
+### [Glossaire](https://cyber.gc.ca/fr/glossaire) 
+sur la cybersécurité et de terme en liens avec le [Centre canadien pour la cybersécurité], mais pas nécessairement avec la cybersécurité.
+
+> Leur glossaire s'apparente à [celui de pensezcybersécurité](https://www.pensezcybersecurite.gc.ca/cnt/rsrcs/glssr-fr.aspx), mais il manque certaines définitions, donc mieux vaut consulter l'autre.
+
+### [Développent le logiciel Assemblyline](https://cyber.gc.ca/fr/chaine-de-montage-assemblyline)
+Ce logiciel open source [disponible sur BitBucket](https://bitbucket.org/cse-assemblyline/) permet l'analyse de fichiers pour des maliciels et peut être utilisé pour enclencher des mesures de sécurité si un maliciel est trouvé.
+
+### [Service de validation de modules cryptographiques](https://cyber.gc.ca/fr/programme-de-validation-des-modules-cryptographiques-pvmc)
+Ce service certifie les modules cryptographiques en s'assurant qu'ils respectent le standard [FIPV-123](https://csrc.nist.gov/projects/cmvp) utilisé par les gouvernements canadiens et américains. 
