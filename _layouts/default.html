@@ -37,7 +37,7 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                {% for section in site.data.barre-outils %}
+                {% for section in site.data.barre-nav %}
                     {% if section.items.size > 0 %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="{{ section.nom }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -82,7 +82,7 @@
                         {% endfor %}
                     </div>
 
-                    {% for section in site.data.map %}
+                    {% for section in site.data.sitemap %}
                     <div class="col d-flex flex-column">
                         <a class="lead text-light text-center text-md-right" href="{{ section.lien | relative_url }}">{{ section.nom }}</a>
                         {% for sous-section in section.items %}
