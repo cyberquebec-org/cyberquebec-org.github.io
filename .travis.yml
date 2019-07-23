@@ -1,0 +1,22 @@
+language: ruby
+cache: bundler
+rvm:
+  - 2.6
+
+install:
+  - bundle install
+
+script:
+  - JEKYLL_ENV="production" bundle exec jekyll build -d public
+
+deploy:
+  local_dir: public
+  repo: cyberquebec-org/cyberquebec-org.github.io
+  target_branch: master
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  email: zakary.kamal-ismail@cyberquebec.org
+  name: ZakCodes
+  on:
+    branch: source
