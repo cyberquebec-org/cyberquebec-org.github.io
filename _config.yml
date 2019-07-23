@@ -16,6 +16,12 @@ default_lang: "fr"
 exclude_from_localization: ["assets"]
 parallel_localization: false # Cette fonction doit être désactivée, car elle ne fonctionne pas sur Windows
 
+jekyll-minifier:
+  exclude: 
+    - assets/fontawesome/*
+  uglifier_args:
+    harmony: true
+
 collections:
   sources: 
     layout: source
