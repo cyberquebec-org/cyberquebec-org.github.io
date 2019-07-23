@@ -7,7 +7,7 @@ install:
   - bundle install
 
 script:
-  - JEKYLL_ENV="production" bundle exec jekyll build -d public
+  - bundle exec jekyll build -d public
 
 deploy:
   local_dir: public
