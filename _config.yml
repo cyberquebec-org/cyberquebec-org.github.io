@@ -3,7 +3,6 @@ author: CCTT en cybersécurité du Cégep de l'Outaouais
 description: CCTT en cybersécurité du Cégep de l'Outaouais
 
 url: https://cyberquebec.org
-basePath: /trousse
 permalink: pretty
 exclude:
   - README.md
