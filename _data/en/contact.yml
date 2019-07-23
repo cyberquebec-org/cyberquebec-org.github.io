@@ -1,0 +1,20 @@
+title: Contact Us
+
+agrandir-carte: View Larger Map
+items: 
+  - nom: Address
+    icone: fas fa-map-marker-alt
+    lien: https://goo.gl/maps/Ffo76Unz9KNvaYMa7
+    description: > 
+      333 Cité-des-Jeunes Boulevard, Gatineau, QC J8Y 6M4, Canada
+  - nom: Phone Number
+    icone: fa fa-phone
+    lien: tel:819-000-000
+    description: 819-000-000
+  - nom: Business Hours
+    icone: fas fa-clock
+    description: Mon to Fri from 9h to 17h
+  - nom: Email
+    icone: fa fa-envelope
+    lien: mailto:info@cyberquebec.org
+    description: info@cyberquebec.org
