@@ -12,6 +12,11 @@ keep_files:
   - css
 strict-front-matter: true
 
+languages: ["fr", "en"]
+default_lang: "fr"
+exclude_from_localization: ["assets"]
+parallel_localization: false # Cette fonction doit être désactivée, car elle ne fonctionne pas sur Windows
+
 collections:
   sources: 
     layout: source
@@ -62,3 +67,4 @@ defaults:
 plugins: 
   - jekyll-minifier
   - jekyll-sitemap
+  - jekyll-polyglot

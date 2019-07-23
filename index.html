@@ -6,10 +6,10 @@ stylesheets:
 {% include image_asset.html class="w-100 banner" src="banner.webp" %}
 <div class="container-fluid">
     <div class="row justify-content-around">
-        <p class="lead mt-3 mb-n3 col-12 col-lg-8">{{ page.description }}</p>
+        <p class="lead mt-3 mb-n3 col-12 col-lg-8">{{ site.data.index.description }}</p>
     </div>
     <div class="row justify-content-around">
-        {% for axe in page.axes-intervention %}
+        {% for axe in site.data.index.axes-intervention %}
         <div class="col-12 col-lg-6 p-5">
             <h2>{{ axe.nom | upcase }}</h2>
             {% include image_asset.html class="d-block mx-auto" src=axe.image %}

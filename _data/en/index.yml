@@ -1,0 +1,30 @@
+description: >
+  CyberQuébec's field of intervention is cybersecurity, ie all activities aimed at protecting individuals and businesses from malicious use of computers and, particularly, when the resources mobilized are connected to a communications network.
+  As a College Technology Transfert Center (CCTT), CyberQuébec's actions fall within the four main areas of intervention that are common to the Synchronex network centers:
+
+axes-intervention:
+  - nom: Information
+    image: axe-infos.webp
+    description: |
+      **Cybersecurity is important for you. Believe us!**
+        * Do you know how many passwords do you use?
+        * Have you ever used the same password for more than one website at a time?
+        * Do you need to share a password with collaborators?
+        * Do you know the impacts of your everyday use of the Internet on your personal and professionnal life?
+
+      **Zero risk does not exist, but we can help SMEs, small organizations and common mortals realize their level of maturity in cybersecurity. A few basic measures can also greatly mitigate the risk of the most common attacks.**
+
+  - nom: Applied Research
+    image: axe-recherche.webp
+    description: |
+      We have the resources to implement a research protocol to find an adequate and sustainable solution to your problem. The CCTT accompanies you by putting you in touch with experienced researchers who will put their shoulder to the wheel to help you advance your products and services.
+
+  - nom: Formation
+    image: axe-formation.webp
+    description: |
+      The aim of the CCTT is to address the problem of labor scarcity and the lack of women in the sector by matching schooling with the needs of the labor market.
+
+  - nom: Technical Support
+    image: axe-support.webp
+    description: |
+      CCTT assists SMEs in identifying the technical expertise they need to improve the range of skills of their team. For professionals, faculty and students alike, our innovative cybersecurity ecosystem gives you quick access to the technical support you need to implement an existing solution.

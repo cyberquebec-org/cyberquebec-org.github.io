@@ -1,0 +1,8 @@
+- nom: General
+  cible: general
+- nom: Individuals
+  cible: individus
+- nom: Small and medium businesses
+  cible: pme
+  commentaire: >
+    All the questions from the individuals section are also applicable to SMEs.

@@ -48,13 +48,22 @@ Pour afficher des icônes, [FontAwesome](https://fontawesome.com/) est utilisé.
 [Cette section de leur site](https://fontawesome.com#easy-to-use) donne un exemple interactif de comment utiliser les icônes en HTML.
 
 ## I18n
-Le plugin qui sera utilisé pour gérer l'internationalisation (la traduction des pages) n'est pas encore décidé. Voici les options qui sont considérées:
+Le plugin utilisé pour l'internationalisation (la traduction du site dans différents languages) est [polyglot]. Il a été choisi car: 
+* Il fournit un [`liquid tag`]() pour implémenter faire du SEO pour un site multilingue.
+* Il permet de mettre les fichiers de données (_data) dans des dossiers pour chaque langue et ensuite il nous donne accès aux données de la langue active sans aucune configuration nécessaire.
+* Il traduit automatiquement les liens.
+
+Cependant, il pourrait être amélioré de telles façons: 
+* Il pourrait nous permettre de mettre tous les autres fichiers de collections dans des dossiers pour chaque langues et les ramener au top level.
+* Il pourrait assumer la langue d'un fichier si son nom suit ce format `nom.lang.ext` où `lang` est la langue du fichier.
+* Il pourrait assumer le permalink d'un fichier si son nom suit ce format `nom.lang.ext` où `lang` est la langue du fichier en ne prenant que nom et en remplaçant le nom par `/` s'il est `index`.
+
+D'autres options ont étés considérées, elles n'étaient pas aussi faciles d'utilisation et n'avaient pas autant de fonctionnalités. En voici certaines: 
 * [jekyll-multiple-languages-plugin](https://github.com/kurtsson/jekyll-multiple-languages-plugin)
     * 4 à 5x plus populaire que polyglot
     * Maintenue beaucoup plus activement
     * Permet de traduire les liens vers les pages
-* [polyglot]
-    * Il donne de bons conseils de [SEO pour les sites multilingues](https://polyglot.untra.io/en/seo/) (**nous pouvons utiliser ces conseils même sans polyglot**)
+    * Ne traduit pas les fichiers de données
 
 ## Génerateur de HTML pour Markdown
 [kramdown] est celui par défaut pour [Jekyll] ainsi que celui qui est utilisé en ce moment. En plus des fonctionnalités du standard Markdown, [kramdown] nous permet de [d'ajouter des classes et des IDs aux éléments](https://kramdown.gettalong.org/syntax.html#attribute-list-definitions), ce qui pourrait nous être très utile.  
