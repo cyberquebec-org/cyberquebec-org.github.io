@@ -1,6 +1,10 @@
 title: CyberQuébec.org
-author: CCTT en cybersécurité du Cégep de l'Outaouais
-description: CCTT en cybersécurité du Cégep de l'Outaouais
+author:
+  fr: CCTT en cybersécurité du Cégep de l'Outaouais
+  en: CCTT in cybersecurity of Cégep de l'Outaouais
+description:
+  fr: CCTT en cybersécurité du Cégep de l'Outaouais
+  en: CCTT in cybersecurity of Cégep de l'Outaouais
 
 url: https://cyberquebec.org
 permalink: pretty
