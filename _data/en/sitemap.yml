@@ -1,5 +1,6 @@
 - nom: Cybersecurity Toolkit
-  items: 
+  lien: /trousse
+  items:
     - nom: Good Practices
       lien: /trousse/pratiques
     - nom: Threats
@@ -11,8 +12,8 @@
 
 - nom: Home
   lien: /
-  items: 
-    - nom: Contact Us 
+  items:
+    - nom: Contact Us
       lien: /contact
     - nom: About
       lien: /a-propos

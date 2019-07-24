@@ -1,5 +1,6 @@
 - nom: Trousse en Cybersécurité
-  items: 
+  lien: /trousse
+  items:
     - nom: Bonne Pratiques
       lien: /trousse/pratiques
     - nom: Risques
@@ -11,8 +12,8 @@
 
 - nom: Acceuil
   lien: /
-  items: 
-    - nom: Nous Contacter  
+  items:
+    - nom: Nous Contacter
       lien: /contact
     - nom: À Propos
       lien: /a-propos
