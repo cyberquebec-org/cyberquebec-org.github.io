@@ -1,0 +1,29 @@
+{% assign author = site.author[site.active_lang] %}
+{% assign description = page.description | default: site.description[site.active_lang] %}
+{% assign image = page.image | default: http://localhost:4000/assets/images/banner.webp %}
+
+<meta name="generator" content="Jekyll v3.8.6">
+<meta property="og:title" content="{{ site.title }}">
+<meta name="author" content="{{ author }}">
+<meta property="og:locale" content="{{ site.active_lang }}_US">
+<meta name="description" content="{{ description }}">
+<meta property="og:description" content="{{ description }}">
+<link rel="canonical" href="{{ page.url }}">
+<meta property="og:url" content="{{ page.url }}">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:image" content="{{ image }}">
+<script type="application/ld+json">
+{
+    "author":{
+        "@type":"Organization",
+        "name": "{{ author }}"
+    },
+    "description": "{{ author }}",
+    "headline": "{{ site.title }}",
+    "@type": "WebSite",
+    "name": "{{ site.title }}",
+    "image": "{{ image }}",
+    "url": "{{ page.url }}",
+    "@context": "https://schema.org"
+}
+</script>
