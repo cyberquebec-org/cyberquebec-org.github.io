@@ -1,7 +1,7 @@
-- nom: Trousse de cybersécurité
+- nom: Trousse de Cybersécurité
   lien: /trousse
-  items: 
-    - nom: Bonne pratiques
+  items:
+    - nom: Bonnes pratiques
       lien: /trousse/pratiques
     - nom: Risques
       lien: /trousse/risques
