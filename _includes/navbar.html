@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+        <img src="{{ 'assets/images/cyberqc.webp' | relative_url }}" alt="CyberQuebec.org" class="brand-image">
+    </a>
+
+    {%- if jekyll.environment != "production" -%}
+        <a class="badge badge-warning mr-auto" href="https://github.com/cyberquebec-org/cyberquebec-org.github.io">
+            DEV
+        </a>
+    {%- endif -%}
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            {% for section in site.data.barre-nav %}
+                {% if section.items.size > 0 %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="{{ section.nom }}Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ section.nom }}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="{{ section.nom }}Dropdown">
+                    {% for item in section.items %}
+                        {% if item.nom != '|' %}
+                            <a class="dropdown-item" href="{{ item.lien }}">{{ item.nom }}</a>
+                        {% else %}
+                            <div class="dropdown-divider"></div>
+                        {% endif %}
+                    {% endfor %}
+                    </div>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ section.lien }}">{{ section.nom }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% if site.active_lang == 'fr' %}
+        <a href=" {{ page.url | prepend: 'en' | relative_url }}" class="nav-link">EN</a>
+    {% else %}
+        <a href=" {{ page.url | remove_first: 'en' | relative_url }}" class="nav-link">FR</a>
+    {% endif %}
+</nav>
