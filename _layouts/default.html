@@ -74,29 +74,7 @@
         <main class="flex-grow-1">
             {{ content }}
         </main>
-        <footer class="bg-primary">
-            <div class="container my-3 ml-auto" style="list-style: none;">
-                <div class="row justify-content-between">
-                    <div class="col-12 col-md text-center py-3 my-auto">
-                        {% for social in site.data.social %}
-                        <a href="{{ social.lien }}" class="fa {{ social.icone }} text-light social"></a>
-                        {% endfor %}
-                    </div>
-
-                    {% for section in site.data.sitemap %}
-                    <div class="col d-flex flex-column">
-                        <a class="lead text-light text-center text-md-right" href="{{ section.lien | relative_url }}">{{ section.nom }}</a>
-                        {% for sous-section in section.items %}
-                        <a class="text-light text-center text-md-right" href="{{ sous-section.lien | relative_url }}">{{ sous-section.nom }}</a>
-                        {% endfor %}
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-            <p class="mb-0 px-2 py-1 text-center text-light" style="background: rgba(0, 0, 0, 0.50);">
-                &copy; {{ "now" | date: "%Y" }} {{ site.data.copyright }}
-            </p>
-        </footer>
+        {% include footer.html %}
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
