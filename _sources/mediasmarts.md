@@ -1,11 +1,11 @@
 ---
 nom: MediaSmarts
 lien: https://mediasmarts.ca
-lang: 
+lang:
     - fr
     - en
 type: obnl
-partenaires: 
+partenaires:
     - Telus
     - Cira
     - Bell
@@ -22,3 +22,5 @@ partenaires:
 
 TODO
 N'ont pas l'air de donner de discuter de cybersécurité
+
+Cyberintimidation, sextos (chez les jeunes)

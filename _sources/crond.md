@@ -1,7 +1,7 @@
 ---
 nom: Cyber Range Organization and Design (CROND)
 lien: https://www.jaist.ac.jp/misc/crond/
-lang: 
+lang:
     - eng
     - jpn
 type: universite
@@ -25,4 +25,4 @@ Convertit le contenu de la formation écrit en YAML, utilisé par les outils du 
 Outils pouvant déclenché des actions en réponse à certains évènements pour simuler un scénario dans le cadre d'une formation en cybersécurité. Cet outils peut être utilisé avec CyTrONE.
 
 <!-- Section subjective -->
-> Ces outils semblent très utiles et interressants, mais ils ne sont pas activement développés. Il se peut cependant que ce soit parce qu'ils fonctionnent déjà bien. De toutes les façons, comme ils sont sur GitHub, n'importe qui peut se faire une copie personnelle du projet pour y ajouter des fonctionnalités ou corriger des bugs.
+> Ces outils semblent très utiles et interressants, mais ils ne sont pas activement développés. Il se peut cependant que ce soit parce qu'ils fonctionnent déjà bien. De toutes les façons, comme ils sont sur GitHub, n'importe qui peut y ajouter des fonctionnalités ou corriger des bugs puis les redonner à la communauté.

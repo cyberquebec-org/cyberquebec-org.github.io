@@ -1,7 +1,7 @@
 ---
 nom: Kereon
 lien: https://www.kereon.com/
-lang: 
+lang:
     - fra
     - eng
 type: obl
