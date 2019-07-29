@@ -54,4 +54,8 @@ footer {
     }
 }
 
-#map {}
+blockquote {
+    color: darken($secondary, 50%);
+    border-left: 2px solid $secondary;
+    padding-left: 0.5em;
+}
