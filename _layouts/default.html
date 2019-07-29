@@ -70,7 +70,7 @@
         {% endif %}
     </nav>
 
-    <div class="wrap d-flex flex-column">
+    <div class="wrap d-flex flex-column" {% if page.data-spy %}data-spy="scroll"{% endif %}>
         <main class="flex-grow-1">
             {{ content }}
         </main>
