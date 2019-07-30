@@ -30,8 +30,7 @@ collections:
   sources: 
     layout: source
     output: true
-    permalink: /trousse/sources/:path/ # Source: https://ben.balter.com/2015/02/20/jekyll-collections/
-                                       # Il faut définitivement ajouter cela à la documentation des collections dans jekyll
+    permalink: /trousse/sources/:path/
     section: trousse
     sous-section: sources
   pratiques: 
