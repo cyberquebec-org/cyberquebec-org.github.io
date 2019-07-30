@@ -10,7 +10,7 @@
     - nom: Sources
       lien: /trousse/sources
 
-- nom: Acceuil
+- nom: Accueil
   lien: /
   items:
     - nom: Nous Contacter
