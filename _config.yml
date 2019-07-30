@@ -21,36 +21,36 @@ exclude_from_localization: ["assets"]
 parallel_localization: false # Cette fonction doit être désactivée, car elle ne fonctionne pas sur Windows
 
 jekyll-minifier:
-  exclude: 
+  exclude:
     - assets/fontawesome/*
   uglifier_args:
     harmony: true # Permet d'utiliser la syntaxe ES6
 
 collections:
-  sources: 
+  sources:
     layout: source
     output: true
     permalink: /trousse/sources/:path/
     section: trousse
     sous-section: sources
-  pratiques: 
+  pratiques:
     layout: pratique
     output: true
     permalink: /trousse/pratiques/:path/
     section: trousse
     sous-section: pratiques
-  risques: 
+  risques:
     layout: risques
     output: true
     permalink: /trousse/risques/:path/
     section: trousse
     sous-section: risques
-  faq: 
+  faq:
     layout: faq
     output: false
     section: trousse
     sous-section: faq
-  conferences: 
+  conferences:
     layout: conferences
     output: true
     permalink: /idk/conferences/:path/
@@ -70,11 +70,11 @@ defaults:
   - scope:
       path: "_sources"
     values:
-      layout: source 
+      layout: source
       stylesheets:
         - sources.css
 
-plugins: 
+plugins:
   - jekyll-minifier
   - jekyll-sitemap
   - jekyll-polyglot
