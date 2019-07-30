@@ -24,7 +24,7 @@ jekyll-minifier:
   exclude: 
     - assets/fontawesome/*
   uglifier_args:
-    harmony: true
+    harmony: true # Permet d'utiliser la syntaxe ES6
 
 collections:
   sources: 
