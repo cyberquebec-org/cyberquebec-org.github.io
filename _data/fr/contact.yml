@@ -1,19 +1,19 @@
 title: Nous Joindre
 
 agrandir-carte: Agrandir la carte
-items: 
+items:
   - nom: Adresse
     icone: fas fa-map-marker-alt
     lien: https://goo.gl/maps/Ffo76Unz9KNvaYMa7
-    description: > 
+    description: >
       333 Boulevard de la Cité-des-Jeunes, Gatineau, QC J8Y 6M4, Canada
   - nom: Heures d'ouvertures
     icone: fas fa-clock
     description: Lun au Ven de 9h à 17h
   - nom: Téléphone
     icone: fa fa-phone
-    lien: tel:819-000-000
-    description: 819-000-000
+    lien: tel:1-866-770-4012;2088
+    description: 1-866-770-4012 ext. 2088
   - nom: Courriel
     icone: fa fa-envelope
     lien: mailto:info@cyberquebec.org
