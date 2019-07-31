@@ -11,6 +11,8 @@ permalink: pretty
 exclude:
   - README.md
   - schemas
+  - Gemfile
+  - Gemfile.lock
 keep_files:
   - css
 strict-front-matter: true
