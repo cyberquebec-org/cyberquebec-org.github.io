@@ -14,7 +14,7 @@
     {% for stylesheet in page.stylesheets %}
         <link rel="stylesheet" href="{{ stylesheet | prepend: 'assets/css/' | relative_url }}">
     {% endfor %}
-    <link rel="shortcut icon" type="image/png" href="{{ 'assets/images/shortcut.ico' | relative_url }}" sizes="32x32">
+    <link rel="shortcut icon" type="image/png" href="{{ '/favicon.ico' | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace: 'index.html','' | absolute_url }}">
 
     {% include seo.html %}
