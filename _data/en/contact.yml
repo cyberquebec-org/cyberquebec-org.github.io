@@ -13,7 +13,7 @@ items:
   - nom: Phone Number
     icone: fa fa-phone
     lien: tel:1-866-770-4012;2088
-    description: 1-866-770-4012 poste 2088
+    description: 1-866-770-4012 ext. 2088
   - nom: Email
     icone: fa fa-envelope
     lien: mailto:info@cyberquebec.org
