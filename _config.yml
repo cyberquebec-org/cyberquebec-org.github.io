@@ -19,7 +19,9 @@ strict-front-matter: true
 
 languages: ["fr", "en"]
 default_lang: "fr"
-exclude_from_localization: ["assets"]
+exclude_from_localization:
+  - assets
+  - favicon.ico
 parallel_localization: false # Cette fonction doit être désactivée, car elle ne fonctionne pas sur Windows
 
 jekyll-minifier:
