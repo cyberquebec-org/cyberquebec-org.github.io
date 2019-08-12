@@ -13,6 +13,7 @@ exclude:
   - schemas
   - Gemfile
   - Gemfile.lock
+  - Rakefile
 keep_files:
   - css
 strict-front-matter: true
