@@ -12,7 +12,7 @@ layout: default
         {% if page.partenaires.size > 0 %}
             <h2>Partenaires</h2>
             {% for partenaire in page.partenaires %}
-                <a href="#" class="d-block">{{ partenaire }}</a>
+                <a href="{{ partenaire[1] }}" class="d-block">{{ partenaire[0] }}</a>
             {% endfor %}
         {% endif %}
     </div>
