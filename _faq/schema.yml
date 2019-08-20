@@ -14,7 +14,7 @@ properties:
   content:
     type: string
     description: Réponse rédigée en markdown
-  cible: 
+  cible:
     type: string
     description: Public ciblé par la question
     enum:
@@ -30,4 +30,5 @@ properties:
         - fraude
         - vie-privee
         - hammeconnage
+        - attaque
         - appareils
