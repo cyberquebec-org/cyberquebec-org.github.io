@@ -1,12 +1,11 @@
 ---
 nom: Centre antifraude du Canada
 lien: http://www.antifraudcentre-centreantifraude.ca
-lang: 
+lang:
     - fra
     - eng
 type: gouvernement-canadien
-partenaires: []
-categories: 
+categories:
     - fraude
 ---
 Leur mission est de fournir des informations sur la fraude pour les entreprises et les individus.  

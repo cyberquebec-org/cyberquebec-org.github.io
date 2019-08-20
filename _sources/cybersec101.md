@@ -2,8 +2,11 @@
 nom: Cybersec 101
 lien: https://www.cybersec101.ca
 type: gouvernement-canadien
+lang:
+    - fra
+    - eng
 partenaires:
-    - SERENE-RISC
+    SERENE-RISC: /trousse/sources/serene-risc
 categories: []
 ---
 Ceci est un site d'apprentissage interactif de la cybersécurité du [SERENE-RISC]({{ '/trousse/sources/serene-risc' | relative_url }}) destiné au grand public, mais plus spécifiquement aux personnel des bibliothèques. Il comporte de nombreux modules qui présentent les risques et les bonnes pratiques pour s'en protéger.  

@@ -4,7 +4,8 @@ lien: https://www.cisecurity.org
 lang:
     - eng
 type: obnl
-partenaires: [] # TODO
+partenaires: 
+    TODO: https://example.com/
 categories: []
 ---
 le CIS est un OBNL ayant pour but de protéger les entitées privées et publiques des vulnérabilités. Ils le font en offrant plusieurs services et outils pour se protéger des menaces informatiques. Le CIS est en partenariat avec plusieurs organismes du gouvernement des États-Unis.  

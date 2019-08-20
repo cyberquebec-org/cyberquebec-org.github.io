@@ -5,11 +5,14 @@ lang:
     - eng
 type: organisme-international
 partenaires:
-    - ONU
+    Nations Unies: https://www.un.org/
+categories: []
 ---
 L'UIT a pour objectif d'aider à la coopération entre les pays et au développement technologique des pays émergents. Ils veulent aussi augmenter le niveau de sécurité des TI et la confiance qu'on leur accorde.
 
 En plus des sections mentionnées ci-dessous, d'autres informations sur la cybersécurité peuvent être trouvées à [ce lien](https://www.itu.int/en/ITU-D/Cybersecurity/Pages/default.aspx).
+
+> Ce site est marqué comme seulement disponible en anglais, car, même si plusieurs pages sont aussi traduite en français, en espagnol, en russe et en arabe, toutes les pages reliées à la cybersécurité ne le sont pas. Certains des documents de cybersécurité sont cependant traduits dans certaines de ces langues.
 
 ## Ressources pour légiférer en matière de cybersécurité
 Plusieurs ressources sont gratuitement mises à la disposition des gouvernements pour les aider à élaborer des lois sur la cybersécurité.
@@ -36,7 +39,5 @@ Cet index est un classement des pays fait chaque année depuis 2014 par l'ONU. I
 
 ## Mesures de cybersécurité
 * Sont en train d'élaborer des mesures de cybersécurité pour le secrétariat de l'ONU
-
-> J'ai marqué ce site comme seulement disponible en anglais, car, même si plusieurs pages sont aussi traduite en français, en espagnol, en russe et en arabe, toutes les pages reliées à la cybersécurité ne le sont pas Certains des documents de cybersécurité sont cependant traduits dans quelques langues.
 
 [combattingcybercrime.org]: {{ '/trousse/sources/combattre-cybercriminalite' | relative_url }}

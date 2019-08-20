@@ -1,8 +1,9 @@
 ---
 nom: CEFRIO
 lien: https://cefrio.qc.ca
+type: obnl
 lang:
-    - fr
-    - en
-
+    - fra
+    - eng
+categories: []
 ---

@@ -1,18 +1,18 @@
 ---
 nom: Combattre la cybercriminalité
-lien: http://www.combattingcybercrime.org/#toolkit
+lien: http://www.combattingcybercrime.org/
 lang:
     - eng
 type: organisme-international
 partenaires:
-    - union-internationale-telecomunications
-    - organisation-nations-unies
-    - banque-mondiale
-    - global-cyber-aliance
-    - conseil-europeen
-    - bureau-procureur-supreme-coree-sud
-    - partenariat-banque-mondiale-koree
-    - association-internationale-droit-penal
+    Union internationale des télécommunications: /trousse/sources/uit
+    Nations Unies: https://www.un.org/
+    Banque Mondiale: https://www.banquemondiale.org/
+    Global Cyber Alliance: /trousse/sources/globalcyberalliance
+    Conseil Européen: https://www.consilium.europa.eu
+    Bureau du Procureur Suprème de la Corée du Sud: http://www.spo.go.kr/site/eng/main.do
+    KWPF: https://www.worldbank.org/en/programs/korea-world-bank-group-partnership-facility
+    Association Internationale de Droit Pénal: http://www.penal.org/
 categories: []
 ---
 Ce site est le résultat d'une collaboration entre plusieurs organismes nationaux et internationaux. Les ressources qui s'y trouvent sont destinées à aider les pays émergents à sécuriser leurs TIs.

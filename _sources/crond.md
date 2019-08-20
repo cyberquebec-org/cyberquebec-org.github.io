@@ -1,12 +1,12 @@
 ---
-nom: Cyber Range Organization and Design (CROND)
+nom: Cyber Range Organization and Design
 lien: https://www.jaist.ac.jp/misc/crond/
 lang:
     - eng
     - jpn
 type: universite
 partenaires:
-    - Japan Advanced Institute of Science and Technology
+    Japan Advanced Institute of Science and Technology: https://www.jaist.ac.jp/english/
 categories: []
 ---
 Cette organisation développe plusieurs logiciels libres ayant pour but d'aider à la formation d'experts en cybersécurité. Ces outils permettent d'automatiser le déploiement d'environnement virtuels pour faire des simulations d'attaques et sont tous programmés en utilisant [Python 2.7](https://www.python.org/), [Perl](https://www.perl.org) et [Bash](https://www.gnu.org/software/bash). [La license BSD à 3 clauses](https://opensource.org/licenses/BSD-3-Clause) est utilisée pour tous les projets mentionnés ci-dessous.

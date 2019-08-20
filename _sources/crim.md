@@ -1,10 +1,10 @@
 ---
 nom: CRIM
-lien: https://www.crim.ca/fr
+lien: https://www.crim.ca
+type: universite
 lang:
-    - fr
+    - fra
 partenaires:
-    - TODO
-categories:
-    - recherche
+    TODO: https://example.com/
+categories: []
 ---

@@ -10,7 +10,7 @@ required:
   - content
   - categories
 properties:
-  nom:
+  title:
     type: string
     description: Nom de la source
   lien:
@@ -20,26 +20,32 @@ properties:
     type: string
     description: Type de la source. Chaque type est accompagné d'une description.
     enum:
-      - gouvernement-canadien # Gouvernement du Canada 
-      - gouvernement-provincial # Gouvernement d'une province canadienne 
-      - municipalite # Municipalité canadienne ou non 
+      - gouvernement-canadien # Gouvernement du Canada
+      - gouvernement-provincial # Gouvernement d'une province canadienne
+      - municipalite # Municipalité canadienne ou non
       - universite # Université canadienne ou non
-      - gouvernement-etranger # Gouvernement étranger 
-      - organisme-international # Organisme 
+      - gouvernement-etranger # Gouvernement étranger
+      - organisme-international # Organisme
       - obnl # Organisme n'ayant pas pour but de faire du profit (attention ceci n'est pas une définition légale)
       - obl # Organisme ayant pour but de faire du profit (attention ceci n'est pas une définition légale)
+      - inconnu
   lang:
     type: array
     description: La liste des langues offertes
     items:
       type: string
       description: Code de la langue définie par le standard ISO 639.2 (3 caractères et non 2 comme dans le standard ISO 639.1)
+      minLength: 3
+      maxLength: 3
+      pattern: "^[a-z]{3}$"
+      # format: ISO 639.2
   partenaires:
-    type: array
+    type: object
     description: Partenaires de la source
-    items:
+    additionalProperties:
       type: string
-      description: Nom du partenaire
+      # format: uri
+      description: Lien vers le site officiel du partenaire
   content:
     type: string
     description: >
@@ -54,5 +60,10 @@ properties:
       enum:
         - individus
         - PME
+        - parents
+        - courriel
         - fraude
-        - FAQ
+        - vie-privee
+        - cyberintimidation
+        - menaces
+        - faq

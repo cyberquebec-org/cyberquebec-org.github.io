@@ -2,10 +2,9 @@
 nom: Connect Safely
 lien: https://www.connectsafely.org/
 lang:
-    - en
+    - eng
 type: obnl
 categories:
-    - conseils
     - individus
     - parents
     - faq

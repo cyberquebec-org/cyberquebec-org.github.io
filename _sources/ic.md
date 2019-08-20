@@ -5,9 +5,8 @@ lang:
     - fra
     - eng
 type: gouvernement-canadien
-partenaires: []
 categories:
-    - pourriel
+    - courriel
 ---
 ### [Loi canadienne anti-pourriel](https://www.combattrelepourriel.gc.ca/eic/site/030.nsf/fra/accueil)
 TODO Très intéressant

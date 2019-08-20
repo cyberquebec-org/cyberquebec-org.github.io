@@ -1,14 +1,14 @@
 ---
 nom: Association pour la sécurité des informations
 lien: https://asiq.org/
-lang: 
+lang:
     - fra
 type: obnl
 partenaires:
-    - FRANCOPOL
-    - Hackfest
-    - Kereon
-    - Horizon Cumulus
+    FRANCOPOL: http://www.francopol.org/
+    Hackfest: https://hackfest.ca/
+    Kereon: https://www.kereon.com
+    Horizon Cumulus: https://ca.horizon-cumulus.com/
 categories: []
 ---
 Fondé en 1983, L'ASIQ est un organisme sans but lucratif Québecois ayant pour mission de promouvoir la sécurité de l'information. Elle remplie sa mission en organisant des conférences, des évènements, des activités de réseautage.  

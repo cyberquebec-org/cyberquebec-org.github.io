@@ -5,7 +5,6 @@ lang:
     - fra
     - eng
 type: gouvernement-canadien
-partenaires: []
 categories: []
 ---
 Ce commissariat veille au respect des lois sur la protection de la vie privée au Canada. [La première](https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/lois-sur-la-protection-des-renseignements-personnels-au-canada/la-loi-sur-la-protection-des-renseignements-personnels/) concerne le traitement des renseignements personnels par les organismes fédéraux et [la deuxième](https://www.priv.gc.ca/fr/sujets-lies-a-la-protection-de-la-vie-privee/lois-sur-la-protection-des-renseignements-personnels-au-canada/la-loi-sur-la-protection-des-renseignements-personnels-et-les-documents-electroniques-lprpde/) par les entreprises.  

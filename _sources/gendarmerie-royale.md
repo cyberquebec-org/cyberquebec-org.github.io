@@ -5,7 +5,6 @@ lang:
     - fra
     - eng
 type: gouvernement-canadien
-partenaires: []
 categories:
     - fraude
     - cyberintimidation

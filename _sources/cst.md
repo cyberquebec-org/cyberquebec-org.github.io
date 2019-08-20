@@ -2,10 +2,9 @@
 nom: Centre de la sécurité des télécommunications
 lien: https://www.cse-cst.gc.ca/
 lang:
-    - fr
-    - en
+    - fra
+    - eng
 type: gouvernement-canadien
-partenaires: []
 categories: []
 ---
 Le CST est l'organisme canadien de cryptologie, soit de cryptographie et de cryptoanalyse dont les pouvoirs sont énoncés dans [la loi sur la défense nationale](https://laws-lois.justice.gc.ca/fra/lois/N-5/page-10.html).  

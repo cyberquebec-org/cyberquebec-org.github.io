@@ -1,11 +1,10 @@
 ---
 nom: Poste Canada
 lien: https://www.canadapost.ca
-lang: 
+lang:
     - fra
     - eng
 type: gouvernement-canadien
-partenaires: []
 categories: []
 ---
 Leur site offre deux foires aux questions sur la cybersécurité.  

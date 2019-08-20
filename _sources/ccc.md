@@ -6,9 +6,9 @@ lang:
     - eng
 type: gouvernement-canadien
 partenaires:
-    - Centre de la sécurité des télécommunications
-    - Sécurité publique Canada
-    - Services partagés Canada
+    Centre de la sécurité des télécommunications: /trousse/sources/cst
+    Sécurité publique Canada: /trousse/sources/securite-publique-ca
+    Services partagés Canada: https://www.canada.ca/fr/services-partages.html
 categories: []
 ---
 Formé en 2018, il résulte de la [Stratégie nationale de cybersécurité](https://www.securitepublique.gc.ca/cnt/rsrcs/pblctns/ntnl-cbr-scrt-strtg/index-fr.aspx) et rassemble l'expertise en cybersécurité de ses trois organismes partenaires.  

@@ -6,8 +6,8 @@ lang:
     - eng
 type: gouvernement-provincial
 partenaires:
-    - CEFRIO
-    - Ministère de la famille du Québec
+    CEFRIO: https://cefrio.qc.ca/
+    Ministère de la famille du Québec: https://www.mfa.gouv.qc.ca
 categories: []
 ---
 Ce site du gouvernement du Québec a pour but de sensibiliser la population à la cybersécurité et à la cyberintimidation et aux risques qu'on encoure sur le web en fonction de son comportement à l'aide de 2 quiz interactifs.
@@ -19,7 +19,7 @@ Ce site du gouvernement du Québec a pour but de sensibiliser la population à l
 **TODO** Faire le quiz pour savoir ce qu'il comporte
 
 ### [Réponses à des questions sur la Cybersécurité](http://cybervigilance.quebec/index.php)
-Sur sa page d'acceuil, il répond à des questions communes sur certains termes reliés à la cybersécurité. Voici ces questions:
+Sur sa page d'accueil, il répond à des questions communes sur certains termes reliés à la cybersécurité. Voici ces questions:
 * Qu'est-ce que la cybersécurité?
 * Qu'est-ce que la cybercriminalité?
 * Qu'est-ce qu'un cybercomportement?

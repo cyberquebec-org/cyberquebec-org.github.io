@@ -5,9 +5,8 @@ lang:
     - fra
     - eng
 type: gouvernement-canadien
-partenaires: []
 categories:
-    - pourriel
+    - courriel
 ---
 La BDC offre de l'aide aux entreprises canadiennes en les finançant, en les conseillant et en leur offrant des services. Ils soutiennent la croissance économique du Canada en soutenant celle des entreprises.
 
