@@ -10,7 +10,6 @@ url: https://cyberquebec.org
 permalink: pretty
 exclude:
   - README.md
-  - schemas
   - Gemfile
   - Gemfile.lock
   - Rakefile
