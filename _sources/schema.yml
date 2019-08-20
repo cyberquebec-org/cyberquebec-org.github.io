@@ -3,7 +3,7 @@ title: Source
 description: Les informations d'une source utilisée pour faire la trousse de cybersécurité
 type: object
 required:
-  - nom
+  - title
   - lien
   - type
   - lang

@@ -1,5 +1,5 @@
 ---
-nom: Montréal ville résiliente
+title: Montréal ville résiliente
 lien: https://resilient.montreal.ca/
 type: municipalite
 lang:

@@ -1,5 +1,5 @@
 ---
-nom: Bureau de la concurrence du Canada
+title: Bureau de la concurrence du Canada
 lien: https://www.bureaudelaconcurrence.gc.ca
 lang:
     - fra

@@ -1,5 +1,5 @@
 ---
-nom: Cybersec 101
+title: Cybersec 101
 lien: https://www.cybersec101.ca
 type: gouvernement-canadien
 lang:

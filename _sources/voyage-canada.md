@@ -1,5 +1,5 @@
 ---
-nom: Voyage Canada
+title: Voyage Canada
 lien: https://voyage.gc.ca
 type: gouvernement-canadien
 lang:

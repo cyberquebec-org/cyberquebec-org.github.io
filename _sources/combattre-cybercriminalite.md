@@ -1,5 +1,5 @@
 ---
-nom: Combattre la cybercriminalité
+title: Combattre la cybercriminalité
 lien: http://www.combattingcybercrime.org/
 lang:
     - eng

@@ -1,5 +1,5 @@
 ---
-nom: Cybervigilance
+title: Cybervigilance
 lien: http://cybervigilance.quebec/
 lang:
     - fra

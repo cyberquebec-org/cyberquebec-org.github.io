@@ -1,5 +1,5 @@
 ---
-nom: Securité publique Canada
+title: Securité publique Canada
 lien: https://www.canada.ca/fr/services-partages.html
 type: gouvernement-canadien
 lang:

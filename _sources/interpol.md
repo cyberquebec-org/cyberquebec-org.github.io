@@ -1,5 +1,5 @@
 ---
-nom: INTERPOL
+title: INTERPOL
 lien: https://www.interpol.int/
 type: organisme-international
 lang:

@@ -1,5 +1,5 @@
 ---
-nom: MediaSmarts
+title: MediaSmarts
 lien: https://habilomedias.ca/
 lang:
     - fra

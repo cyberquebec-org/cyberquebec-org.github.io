@@ -1,5 +1,5 @@
 ---
-nom: Pensez cybersécurité
+title: Pensez cybersécurité
 lien: https://www.pensezcybersecurite.gc.ca
 type: gouvernement-canadien
 partenaires:

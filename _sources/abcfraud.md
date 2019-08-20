@@ -1,5 +1,5 @@
 ---
-nom: ABC Fraud
+title: ABC Fraud
 lien: http://www.abcfraud.ca/
 lang:
     - eng

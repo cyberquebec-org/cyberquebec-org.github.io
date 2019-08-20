@@ -1,5 +1,5 @@
 ---
-nom: Éducaloi
+title: Éducaloi
 lien: https://www.educaloi.qc.ca/
 lang:
     - fra

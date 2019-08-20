@@ -1,5 +1,5 @@
 ---
-nom: Commissariat de la protection de la vie privée du Canada
+title: Commissariat de la protection de la vie privée du Canada
 lien: https://www.priv.gc.ca
 lang:
     - fra

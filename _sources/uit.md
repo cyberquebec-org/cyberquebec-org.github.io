@@ -1,5 +1,5 @@
 ---
-nom: Union internationale des télécommunications
+title: Union internationale des télécommunications
 lien: https://www.itu.int
 lang:
     - eng

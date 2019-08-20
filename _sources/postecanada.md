@@ -1,5 +1,5 @@
 ---
-nom: Poste Canada
+title: Poste Canada
 lien: https://www.canadapost.ca
 lang:
     - fra

@@ -1,5 +1,5 @@
 ---
-nom: Centre de la sécurité des télécommunications
+title: Centre de la sécurité des télécommunications
 lien: https://www.cse-cst.gc.ca/
 lang:
     - fra

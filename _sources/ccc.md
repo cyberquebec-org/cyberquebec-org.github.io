@@ -1,5 +1,5 @@
 ---
-nom: Centre canadien pour la cybersécurité
+title: Centre canadien pour la cybersécurité
 lien: https://www.cyber.gc.ca
 lang:
     - fra

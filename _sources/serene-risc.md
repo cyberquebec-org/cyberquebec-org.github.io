@@ -1,5 +1,5 @@
 ---
-nom: Réseau intégré sur la cybersécurité
+title: Réseau intégré sur la cybersécurité
 lien: https://www.serene-risc.ca
 type: obnl
 lang:

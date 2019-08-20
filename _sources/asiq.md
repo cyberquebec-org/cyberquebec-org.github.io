@@ -1,5 +1,5 @@
 ---
-nom: Association pour la sécurité des informations
+title: Association pour la sécurité des informations
 lien: https://asiq.org/
 lang:
     - fra

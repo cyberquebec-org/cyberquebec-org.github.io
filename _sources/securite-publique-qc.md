@@ -1,5 +1,5 @@
 ---
-nom: Securité publique Québec
+title: Securité publique Québec
 lien: https://www.securitepublique.gouv.qc.ca/police/prevention-criminalite/semaine-de-la-prevention-de-la-criminalite/cybersecurite.html
 type: gouvernement-provincial
 lang:

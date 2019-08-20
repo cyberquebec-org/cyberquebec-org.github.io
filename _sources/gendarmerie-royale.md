@@ -1,5 +1,5 @@
 ---
-nom: Gendarmerie royale du Canada
+title: Gendarmerie royale du Canada
 lien: http://www.rcmp-grc.gc.ca/
 lang:
     - fra

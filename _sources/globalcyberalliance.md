@@ -1,5 +1,5 @@
 ---
-nom: Global Cyber Alliance
+title: Global Cyber Alliance
 lien: https://www.globalcyberalliance.org
 lang:
     - eng

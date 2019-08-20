@@ -1,5 +1,5 @@
 ---
-nom: Innovation, Sciences et Développement économique Canada
+title: Innovation, Sciences et Développement économique Canada
 lien: http://www.ic.gc.ca/eic/site/icgc.nsf/fra/accueil
 lang:
     - fra

@@ -1,5 +1,5 @@
 ---
-nom: Banque de développement du Canada
+title: Banque de développement du Canada
 lien: https://www.bdc.ca
 lang:
     - fra

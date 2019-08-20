@@ -39,7 +39,7 @@ data-spy: true
                 <h1 id="{{ categorie }}">{{ categorie }}</h1>
                 {% for source in groupe %}
                     <a href="{{ source.url }}">
-                        <h2>{{ source.nom }}</h2>
+                        <h2>{{ source.title }}</h2>
                         <a href="{{ source.lien }}">{{ source.lien }}</a>
                     </a>
                 {% endfor %}

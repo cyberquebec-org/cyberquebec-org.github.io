@@ -1,5 +1,5 @@
 ---
-nom: Centre for Internet Security
+title: Centre for Internet Security
 lien: https://www.cisecurity.org
 lang:
     - eng

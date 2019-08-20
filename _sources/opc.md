@@ -1,5 +1,5 @@
 ---
-nom: Office de la protection du consommateur du Québec
+title: Office de la protection du consommateur du Québec
 lien: https://www.opc.gouv.qc.ca/
 lang:
     - fra

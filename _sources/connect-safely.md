@@ -1,5 +1,5 @@
 ---
-nom: Connect Safely
+title: Connect Safely
 lien: https://www.connectsafely.org/
 lang:
     - eng

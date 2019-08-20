@@ -1,5 +1,5 @@
 ---
-nom: CRIM
+title: CRIM
 lien: https://www.crim.ca
 type: universite
 lang:

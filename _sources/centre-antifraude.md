@@ -1,5 +1,5 @@
 ---
-nom: Centre antifraude du Canada
+title: Centre antifraude du Canada
 lien: http://www.antifraudcentre-centreantifraude.ca
 lang:
     - fra
