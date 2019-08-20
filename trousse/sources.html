@@ -34,7 +34,7 @@ data-spy: true
     </div>
     <div class="col liste-sources" data-spy="scroll" data-target="#nav-sources" data-offset="0">
         {% for categorie in categories %}
-            {% assign groupe = sources[categorie] %}
+            {% assign groupe = sources[categorie] | where: 'lang', site.active_lang %}
             {% if groupe and groupe.size != 0 %}
                 <h1 id="{{ categorie }}">{{ categorie }}</h1>
                 {% for source in groupe %}

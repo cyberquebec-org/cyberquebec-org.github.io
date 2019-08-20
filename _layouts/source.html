@@ -19,7 +19,7 @@ layout: default
     <div class="col-12 col-md-3 order-md-0">
         <nav class="nav nav-pills flex-column bg-secondary">
             {% assign categories = "!$%&, 0-9, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z" | split: ', ' %}
-            {% assign sources = site.sources | sources_alphabetiques %}
+            {% assign sources = site.sources | where: 'lang', site.active_lang | sources_alphabetiques %}
             {% for categorie in categories %}
                 {% assign groupe = sources[categorie] %}
                 {% if groupe and groupe.size != 0 %}
