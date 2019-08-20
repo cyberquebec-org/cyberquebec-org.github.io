@@ -27,7 +27,7 @@ L'argument `-wol` fait en sorte que [Jekyll]:
 Vous pourriez exécuter le serveur et copier le répertoire `_site`, mais générer le site en mode production nous donne certains avantage dont l'exécution de [jekyll-minifier] pour réduire la taille des fichiers. La commande `JEKYLL_ENV=production bundle exec jekyll build` permet de faire cela. Le site généré sera dans le dossier `_site`.
 
 # License
-Pour l'instant, ce projet n'a pas de license, mais il reste tout de même la propriété de CyberQuebec.org. Le dossier `assets/images` n'a pas été inclut dans le code source distribué pour des raisons de droits d'auteur.
+Pour l'instant, ce projet n'a pas de license, mais il reste tout de même la propriété de CyberQuebec.org. Les images se situant dans le dossier `assets/images` n'est pas libre.
 
 # Dépendances
 Cette section est une liste non-exhaustive des projets qui sont et pourraient être utilisés pour créer ce site.

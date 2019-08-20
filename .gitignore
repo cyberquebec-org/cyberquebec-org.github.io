@@ -2,8 +2,4 @@ _site
 .sass-cache
 .jekyll-metadata
 
-# Images (temporairement)
-assets/images/*
-favicon.ico
-
 Gemfile.lock
