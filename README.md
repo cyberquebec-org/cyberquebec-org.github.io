@@ -258,7 +258,14 @@ Un minifier est un programme qui va retirer tous les caractères qui ne sont pas
 Le minifier utilisé est un plugin de [Jekyll] du nom de [jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier), mais il n'est exécuté qu'en mode production. Ceci est une bonne chose, car ça nous permet de pouvoir lire le code source plus facilement et d'avoir accès aux commentaires dans le navigateur pour faire du déboggage lors du développement.  
 
 ## Recherche de contenu sur le site
-[lunr.js](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/) est une librairies en javascript que nous pourrions utiliser avec [Jekyll] pour que les utilisateurs puissent chercher dans le contenu de la trousse de cybersécurité ou dans les articles.
+### [lunr.js](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/)
+C'est est une librairies en [JavaScript][JS] que nous pourrions utiliser avec [Jekyll] pour que les utilisateurs puissent chercher dans le contenu de la trousse de cybersécurité ou dans les articles.
+
+### [Algolia](https://www.algolia.com/)
+Ceci est un service de recherche que j'ai vu être utilisé par plusieurs sites statiques tel que le site officiel de [Hugo](https://gohugo.io/) et [la documentation de gitlab](https://about.gitlab.com/). Il est gratuit pour les projets open source non commerciaux et commence à 29$US/mois POUR 250 000 opérations et 50 000 documents. Leur API semble aussi être super performant.
+
+Il serait intéressant de trouver une alternative open source à ce service, même s'il est payant, pour contribuer au OpenSource plutôt qu'à une compagnie privée: https://alternativeto.net/software/algolia/
+
 
 [CyberQuébec.org]: https://cyberquebec.org
 [Jekyll]: https://jekyllrb.com
