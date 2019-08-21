@@ -215,6 +215,9 @@ Pour donner du style au site, [Bootstrap] est utilisé. C'est un outils open sou
 Elle possède un système de grille et pleins de classes qui nous permettent de facilement designer notre site pour qu'il soit compatible avec les écrans de toutes les tailles.  
 Le fait qu'elle utilise le SASS plutôt que le CSS est aussi un énorme avantage, puisqu'on peut modifier les valeurs des variables afin de changer les couleurs du thème de base pour celles du CCTT.  
 
+### [Semantic UI](https://semantic-ui.com/)
+Ceci est une alternative à bootstrap qui semble très intéressante, mail [Bootstrap] fait totalement l'affaire.
+
 ## Icônes
 Pour afficher des icônes, [FontAwesome](https://fontawesome.com/) est utilisé. C'est une librairie opensource qui fournit [1500+ icônes gratuits](https://fontawesome.com/icons?d=gallery&m=free), dont des icônes de logo de certaines compagnies et médias sociaux.  
 [Cette section de leur site](https://fontawesome.com#easy-to-use) donne un exemple interactif de comment utiliser les icônes en HTML.
