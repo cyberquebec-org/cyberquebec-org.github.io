@@ -226,7 +226,7 @@ Pour afficher des icônes, [FontAwesome] est utilisé. C'est une librairie opens
 ## I18n
 Le plugin utilisé pour l'internationalisation (la traduction du site dans différents languages) est [polyglot]. Il a été choisi car:
 * Il fournit un [`liquid tag`]() pour implémenter faire du SEO pour un site multilingue.
-* Il permet de mettre les fichiers de données (_data) dans des dossiers pour chaque langue et ensuite il nous donne accès aux données de la langue active sans aucune configuration nécessaire.
+* Il permet de mettre les fichiers de données (`_data`) dans des dossiers pour chaque langue et ensuite il nous donne accès aux données de la langue active sans aucune configuration nécessaire.
 * Il traduit automatiquement les liens.
 
 Cependant, il pourrait être amélioré de telles façons:
