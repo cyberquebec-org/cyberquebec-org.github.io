@@ -207,20 +207,21 @@ Cette section est une liste non-exhaustive des projets qui sont et pourraient ê
 ## Générateur de sites statiques
 [Jekyll] est le générateur de sites statiques utilisé à l'heure actuelle pour faire le site du CCTT. Il a l'avantage d'être déjà supporté nativement par GitHub pages, d'être le plus populaire et d'avoir un système de plugin avec une communauté qui l'entoure.
 
-[Middleman](https://middlemanapp.com/) est cependant aussi considéré à l'heure actuelle, car il possède également un système de plugin (moins développé que [Jekyll]), il est beaucoup plus flexible, on peut l'étendre avec du Ruby, il supporte l'internationalisation sans utiliser de plugin et il supporte [les tests Cucumber](https://cucumber.io/) qui pourraient être utilisés pour valider les [JSON Schema](https://json-schema.org/) et s'assurer que les traductions de toutes les pages sont faites. Il est cependant à noter qu'il n'est pas officiellement supporté par GitHub Pages et que sa flexibilité le rend plus difficile d'utilisation pour les gens ne connaissant pas le Ruby.
+[Middleman](https://middlemanapp.com/) est cependant aussi considéré à l'heure actuelle, car il possède également un système de plugin (moins développé que [Jekyll]), il est beaucoup plus flexible, on peut l'étendre avec du [Ruby], il supporte l'internationalisation sans utiliser de plugin et il supporte [les tests Cucumber](https://cucumber.io/) qui pourraient être utilisés pour valider les [JSON Schema](https://json-schema.org/) et s'assurer que les traductions de toutes les pages sont faites. Il est cependant à noter qu'il n'est pas officiellement supporté par GitHub Pages et que sa flexibilité le rend plus difficile d'utilisation pour les gens ne connaissant pas [Ruby].
+
 ## Style
-Pour donner du style au site, [Bootstrap] est utilisé. C'est un outils open source qui peut être utilisé pour donner du style aux sites internets utilisant du [HTML], du [CSS] et du [JS]. Elle est elle-même faite en [JS] et en [SASS] et les librairies javascript [JQuery (slim build)](https://jquery.com/) et [Popper.js](https://popper.js.org/).  
+Pour donner du style au site, [Bootstrap] est utilisé. C'est un outils open source qui peut être utilisé pour donner du style aux sites internets utilisant du [HTML], du [CSS] et du [JS]. Elle est elle-même faite en [JS] et en [SASS] et les librairies [JavaScript][JS] [JQuery (slim build)](https://jquery.com/) et [Popper.js](https://popper.js.org/).  
 
 [Bootstrap] a d'abord été choisi, car c'est la librairie la plus populaire de ce genre et qu'elle est compatible avec tous les navigateurs web.  
 Elle possède un système de grille et pleins de classes qui nous permettent de facilement designer notre site pour qu'il soit compatible avec les écrans de toutes les tailles.  
-Le fait qu'elle utilise le SASS plutôt que le CSS est aussi un énorme avantage, puisqu'on peut modifier les valeurs des variables afin de changer les couleurs du thème de base pour celles du CCTT.  
+Le fait qu'elle utilise [SASS] plutôt que [CSS] est aussi un énorme avantage, puisqu'on peut modifier les valeurs des variables afin de changer les couleurs du thème de base pour celles du CCTT.  
 
 ### [Semantic UI](https://semantic-ui.com/)
 Ceci est une alternative à bootstrap qui semble très intéressante, mail [Bootstrap] fait totalement l'affaire.
 
 ## Icônes
-Pour afficher des icônes, [FontAwesome](https://fontawesome.com/) est utilisé. C'est une librairie opensource qui fournit [1500+ icônes gratuits](https://fontawesome.com/icons?d=gallery&m=free), dont des icônes de logo de certaines compagnies et médias sociaux.  
-[Cette section de leur site](https://fontawesome.com#easy-to-use) donne un exemple interactif de comment utiliser les icônes en HTML.
+Pour afficher des icônes, [FontAwesome] est utilisé. C'est une librairie opensource qui fournit [1500+ icônes gratuits](https://fontawesome.com/icons?d=gallery&m=free), dont des icônes de logo de certaines compagnies et médias sociaux.  
+[Cette section de leur site](https://fontawesome.com#easy-to-use) donne un exemple interactif de comment utiliser les icônes en [HTML].
 
 ## I18n
 Le plugin utilisé pour l'internationalisation (la traduction du site dans différents languages) est [polyglot]. Il a été choisi car: 
@@ -235,17 +236,17 @@ Cependant, il pourrait être amélioré de telles façons:
 
 D'autres options ont étés considérées, elles n'étaient pas aussi faciles d'utilisation et n'avaient pas autant de fonctionnalités. En voici certaines: 
 * [jekyll-multiple-languages-plugin](https://github.com/kurtsson/jekyll-multiple-languages-plugin)
-    * 4 à 5x plus populaire que polyglot
+    * 4 à 5x plus populaire que [polyglot]
     * Maintenue beaucoup plus activement
     * Permet de traduire les liens vers les pages
     * Ne traduit pas les fichiers de données
 
-## Génerateur de HTML pour Markdown
-[kramdown] est celui par défaut pour [Jekyll] ainsi que celui qui est utilisé en ce moment. En plus des fonctionnalités du standard Markdown, [kramdown] nous permet de [d'ajouter des classes et des IDs aux éléments](https://kramdown.gettalong.org/syntax.html#attribute-list-definitions), ce qui pourrait nous être très utile.  
-Cependant, [kramdown] ne respecte pas totalement le standard Markdown, mais pour l'utilisation que nous allons en faire, nous ne devrions pas être affectés.
-Pour le formattage du code par [kramdown], [Rouge](http://rouge.jneen.net/) (écrite en [Ruby]) est la librairie utilisée. Les classes utilisées pour le HTML du code sont les mêmes que celles utilisées par un autre formatteur de code du nom de [Pygments](http://pygments.org/) (écrit en [Ruby]). Grâce à cela, nous pouvons utiliser n'importe quel stylesheet destinée à [Pygments]. Celui utilisé à l'heure actuelle est `monokai` (le thème utilisé dans [Sublime Text](https://www.sublimetext.com/)), qui fut prit de [ce site](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) où nous pouvons choisir un autre thème.  
+## Génerateur de [HTML] pour [Markdown]
+[kramdown] est celui par défaut pour [Jekyll] ainsi que celui qui est utilisé en ce moment. En plus des fonctionnalités du standard [Markdown], [kramdown] nous permet de [d'ajouter des classes et des IDs aux éléments](https://kramdown.gettalong.org/syntax.html#attribute-list-definitions), ce qui pourrait nous être très utile.  
+Cependant, [kramdown] ne respecte pas totalement le standard [Markdown], mais pour l'utilisation que nous allons en faire, nous ne devrions pas être affectés.
+Pour le formattage du code par [kramdown], [Rouge](http://rouge.jneen.net/) (écrite en [Ruby]) est la librairie utilisée. Les classes utilisées pour le [HTML] du code sont les mêmes que celles utilisées par un autre formatteur de code du nom de [Pygments] (écrit en [Ruby]). Grâce à cela, nous pouvons utiliser n'importe quel stylesheet destinée à [Pygments]. Celle utilisée à l'heure actuelle est `monokai` (le thème utilisé dans [Sublime Text](https://www.sublimetext.com/)), qui fut prit de [ce site](http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html) où nous pouvons choisir un autre thème.  
 
-[CommonMark] est un standard de Markdown que nous pourrions utilisé grâce à [un plugin pour Jekyll](https://github.com/jekyll/jekyll-commonmark). Ce plugin fait partie des projets des développeurs de [Jekyll] et est plus performant que [kramdown], car [CommonMark] est implémenté en [C](https://www.iso.org/standard/74528.html) alors que [kramdown] est fait en [Ruby]. Par contre, nous perdrions la fonctionnalité de pouvoir ajouter des `classes` et des `id` aux éléments HTML.
+[CommonMark] est un standard de [Markdown] que nous pourrions utilisé grâce à [un plugin pour Jekyll](https://github.com/jekyll/jekyll-commonmark). Ce plugin fait partie des projets des développeurs de [Jekyll] et est plus performant que [kramdown], car [CommonMark] est implémenté en [C](https://www.iso.org/standard/74528.html) alors que [kramdown] est fait en [Ruby]. Par contre, nous perdrions la fonctionnalité de pouvoir ajouter des `classes` et des `id` aux éléments [HTML].
 
 ## Optimisation de moteurs de recherche (SEO)
 L'optimisation de moteurs de recherche et un groupe de techniques utilisées pour mieux informer le moteur de recherche sur le contenu de notre site et de ses pages.
@@ -257,7 +258,7 @@ L'optimisation de moteurs de recherche et un groupe de techniques utilisées pou
 [polyglot] donne également de [bons conseils sur le SEO](https://polyglot.untra.io/en/seo/), mais ses conseils sont par rapport aux sites multilingues.
 
 ## Minifier
-Un minifier est un programme qui va retirer tous les caractères qui ne sont pas nécessaires des fichiers HTML, CSS, JS et autres afin qu'ils prennent moins de place et soient envoyés plus vite et que les pages chargent plus rapidement.  
+Un minifier est un programme qui va retirer tous les caractères qui ne sont pas nécessaires des fichiers [HTML], [CSS], [JS] et autres afin qu'ils prennent moins de place et soient envoyés plus vite et que les pages chargent plus rapidement.  
 Le minifier utilisé est un plugin de [Jekyll] du nom de [jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier), mais il n'est exécuté qu'en mode production. Ceci est une bonne chose, car ça nous permet de pouvoir lire le code source plus facilement et d'avoir accès aux commentaires dans le navigateur pour faire du déboggage lors du développement.  
 
 ## Recherche de contenu sur le site
@@ -265,10 +266,9 @@ Le minifier utilisé est un plugin de [Jekyll] du nom de [jekyll-minifier](https
 C'est est une librairies en [JavaScript][JS] que nous pourrions utiliser avec [Jekyll] pour que les utilisateurs puissent chercher dans le contenu de la trousse de cybersécurité ou dans les articles.
 
 ### [Algolia](https://www.algolia.com/)
-Ceci est un service de recherche que j'ai vu être utilisé par plusieurs sites statiques tel que le site officiel de [Hugo](https://gohugo.io/) et [la documentation de gitlab](https://about.gitlab.com/). Il est gratuit pour les projets open source non commerciaux et commence à 29$US/mois POUR 250 000 opérations et 50 000 documents. Leur API semble aussi être super performant.
+Ceci est un service de recherche que j'ai vu être utilisé par plusieurs sites statiques tel que le site officiel de [Hugo](https://gohugo.io/) et [la documentation de GitLab](https://about.gitlab.com/). Il est gratuit pour les projets open source non commerciaux et commence à 29USD/mois pour 250 000 opérations et 50 000 documents. Leur API semble aussi être super performant.
 
 Il serait intéressant de trouver une alternative open source à ce service, même s'il est payant, pour contribuer au OpenSource plutôt qu'à une compagnie privée: https://alternativeto.net/software/algolia/
-
 
 [CyberQuébec.org]: https://cyberquebec.org
 [Jekyll]: https://jekyllrb.com
