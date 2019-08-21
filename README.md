@@ -1,5 +1,5 @@
 # CyberQuebec.org [WIP]
-Pour des raisons de sécurité et de performances, le site internet de CyberQuebec.org utilise [Jekyll], un générateur de sites statiques.
+Pour des raisons de sécurité et de performances, le site Internet de CyberQuebec.org utilise [Jekyll], un générateur de sites statiques.
 
 # Comment développer le site localement
 Dans cette section, plusieurs commandes à exécuter dans un terminal sont présentées.  
@@ -224,17 +224,17 @@ Pour afficher des icônes, [FontAwesome] est utilisé. C'est une librairie opens
 [Cette section de leur site](https://fontawesome.com#easy-to-use) donne un exemple interactif de comment utiliser les icônes en [HTML].
 
 ## I18n
-Le plugin utilisé pour l'internationalisation (la traduction du site dans différents languages) est [polyglot]. Il a été choisi car: 
+Le plugin utilisé pour l'internationalisation (la traduction du site dans différents languages) est [polyglot]. Il a été choisi car:
 * Il fournit un [`liquid tag`]() pour implémenter faire du SEO pour un site multilingue.
 * Il permet de mettre les fichiers de données (_data) dans des dossiers pour chaque langue et ensuite il nous donne accès aux données de la langue active sans aucune configuration nécessaire.
 * Il traduit automatiquement les liens.
 
-Cependant, il pourrait être amélioré de telles façons: 
+Cependant, il pourrait être amélioré de telles façons:
 * Il pourrait nous permettre de mettre tous les autres fichiers de collections dans des dossiers pour chaque langues et les ramener au top level.
 * Il pourrait assumer la langue d'un fichier si son nom suit ce format `nom.lang.ext` où `lang` est la langue du fichier.
 * Il pourrait assumer le permalink d'un fichier si son nom suit ce format `nom.lang.ext` où `lang` est la langue du fichier en ne prenant que nom et en remplaçant le nom par `/` s'il est `index`.
 
-D'autres options ont étés considérées, elles n'étaient pas aussi faciles d'utilisation et n'avaient pas autant de fonctionnalités. En voici certaines: 
+D'autres options ont étés considérées, elles n'étaient pas aussi faciles d'utilisation et n'avaient pas autant de fonctionnalités. En voici certaines:
 * [jekyll-multiple-languages-plugin](https://github.com/kurtsson/jekyll-multiple-languages-plugin)
     * 4 à 5x plus populaire que [polyglot]
     * Maintenue beaucoup plus activement
