@@ -7,15 +7,6 @@ data-spy: true
 {% assign categories = "!$%&, 0-9, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z" | split: ', ' %}
 {% assign sources = site.sources | sources_alphabetiques %}
 
-{% for categorie in categories %}
-    {% assign groupe = sources[categorie] %}
-    {% if groupe and groupe.size != 0 %}
-        {% assign premiere-categorie = categorie %}
-        {% break %}
-    {% endif %}
-{% endfor %}
-
-<span id="{{ premiere-categorie }}" class="h-0"></span>
 <div class="row">
     <!-- placeholder pour le panneau de sources -->
     <div class="col-12 col-md-3"></div>
