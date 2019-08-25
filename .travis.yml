@@ -19,12 +19,15 @@ jobs:
     - stage: test
       script:
         - bundle exec rake tests:liens_public
+    - stage: deploy
+      deploy:
+        local_dir: public
+        target_branch: master
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
 
-deploy:
-  local_dir: public
-  target_branch: master
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  on:
-    branch: production
+stages:
+  - test
+  - name: deploy
+    if: branch = "production"
