@@ -1,0 +1,32 @@
+$schema: http://json-schema.org/draft-07/schema#
+title: Risque
+description: Risque de cybersécurité
+type: object
+required: []
+  # - title
+  # - description
+  # - niveau
+  # - tags
+properties:
+  title:
+    type: string
+    description: Nom du risque
+  description:
+    type: string
+    description: Résumé du risque, rédigé en markdown
+  content:
+    type: string
+    description: Description détaillée du risque, rédigée en Markdown
+  cible:
+    type: array
+    description: Cibles du risque
+    items:
+      type: string
+      enum:
+        - individus
+        - entreprises
+  tags:
+    type: array
+    description: Liste de catégories auquelles appartient le risque
+    items:
+      type: string
