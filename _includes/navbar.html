@@ -38,11 +38,11 @@
                 {% endif %}
             {% endfor %}
         </ul>
-    </div>
 
-    {% if site.active_lang == 'fr' %}
-        <a href=" {{ page.url | prepend: 'en' | relative_url }}" class="nav-link">EN</a>
-    {% else %}
-        <a href=" {{ page.url | remove_first: 'en' | relative_url }}" class="nav-link">FR</a>
-    {% endif %}
+        {% if site.active_lang == 'fr' %}
+            <a href=" {{ page.url | prepend: '/en' | relative_url }}" class="nav-link">EN</a>
+        {% else %}
+            <a href=" {{ page.url | remove_first: '/en' | relative_url }}" class="nav-link">FR</a>
+        {% endif %}
+    </div>
 </nav>
