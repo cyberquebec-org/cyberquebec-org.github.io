@@ -16,6 +16,9 @@ jobs:
     - stage: test
       script:
         - bundle exec rake tests:schemas
+    - stage: test
+      script:
+        - bundle exec rake tests:liens_public
 
 deploy:
   local_dir: public

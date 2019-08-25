@@ -9,6 +9,8 @@ group :jekyll_plugins do
 end
 
 group :test do
+    gem 'jekyll-link-checker', :git => 'https://gitlab.com/ZakCodes/jekyll-link-checker.git'
+
     gem 'front_matter_parser'
     gem 'json_schemer'
     gem 'safe_yaml'
