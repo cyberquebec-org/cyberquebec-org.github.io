@@ -54,6 +54,8 @@ collections:
     layout: conferences
     output: true
     sous-section: conferences
+  posts:
+    permalink: /blog/:title/
 
 # Valeurs par défaut pour front matters
 defaults:
