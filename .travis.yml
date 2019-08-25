@@ -6,8 +6,15 @@ rvm:
 install:
   - bundle install
 
-script:
-  - bundle exec jekyll build -d public
+# https://docs.travis-ci.com/user/build-stages
+jobs:
+  include:
+    - stage: build
+      script:
+        - bundle exec jekyll build -d public
+    - stage: test
+      script:
+        - bundle exec rake tests:schemas
 
 deploy:
   local_dir: public

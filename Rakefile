@@ -18,3 +18,7 @@ task :production_build do
     ENV['JEKYLL_ENV'] = 'production'
     sh 'bundle exec jekyll build -d public'
 end
+
+desc "Tous les tests du site"
+namespace :tests do
+end

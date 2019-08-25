@@ -7,3 +7,9 @@ group :jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-polyglot', :git => 'https://github.com/ZakCodes/polyglot.git'
 end
+
+group :test do
+    gem 'front_matter_parser'
+    gem 'json_schemer'
+    gem 'safe_yaml'
+end

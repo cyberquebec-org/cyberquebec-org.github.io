@@ -74,6 +74,11 @@ defaults:
       stylesheets:
         - sources.css
 
+schema-checker:
+  skip:
+    - "*/README.md"
+    - "*/TODO.md"
+
 plugins:
   - jekyll-minifier
   - jekyll-sitemap
