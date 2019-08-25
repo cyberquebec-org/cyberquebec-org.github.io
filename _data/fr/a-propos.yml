@@ -1,0 +1,24 @@
+title: À Propos
+description: |
+  CyberQuébec.org est le CCTT en cybersécurité du [Cégep de l'Outouais](http://www.cegepoutaouais.qc.ca/).
+
+evenements:
+  - nom: Fondation du CCTT
+    date: 2018
+    image: /assets/images/banner.webp
+    description: ""
+
+  - nom: Visite de François Legault
+    date: 2019
+    image: /assets/images/banner.webp
+    description: ""
+
+  - nom: ACFAS
+    date: 2019
+    image: /assets/images/banner.webp
+    description: ""
+
+partenaires:
+  - nom: Synchronex
+    lien: https://synchronex.ca
+    image: /assets/images/partenaires/synchronex.webp

@@ -1,0 +1,49 @@
+---
+layout: default
+title: :a-propos.title
+stylesheets:
+    - a-propos.css
+---
+<div class="container py-3">
+    <h1 class="row">{{ site.data.a-propos.title }}</h1>
+    <div class="row lead">
+        {{ site.data.a-propos.description | markdownify }}
+    </div>
+    <div class="row">
+        <h2>Historique</h2>
+        {% for evenement in site.data.a-propos.evenements %}
+        <div class="row evenement justify-content-center">
+            <div class="col-5 evenement-image my-2 d-none d-lg-block">
+                <img src="{{ evenement.image }}" alt="{{ evenement.nom }}" style="border-radius: 0.25em;">
+            </div>
+            <div class="ligne">
+                <div class="point">
+                    <div class="inner"></div>
+                </div>
+            </div>
+            <div class="col col-lg-5 my-2">
+                <div class="evenement-card">
+                    <div class="card w-100" style="overflow: hidden;">
+                        <img src="{{ evenement.image }}" alt="{{ evenement.nom }}" class="d-lg-none">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ evenement.nom }}</h5>
+                            <h6 class="card-subtitle text-muted mb-2">{{ evenement.date }}</h6>
+                            <p class="card-text">{{ evenement.description | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <h2>Partenaires</h2>
+        <div class="row justify-content-center">
+            {% for partenaire in site.data.a-propos.partenaires %}
+            <a class="col-12 col-md-5" href="{{ partenaire.lien }}">
+                <img src="{{ partenaire.image }}" alt="{{ partenaire.nom }}" style="object-fit: contain; max-width: 100%">
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
