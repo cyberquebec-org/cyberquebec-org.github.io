@@ -4,11 +4,11 @@ description: Informations sur une conférence
 type: object
 required:
   - date
-  - nom
+  - title
   - description
   - content
   - image
-  - categories
+  - tags
 properties:
   date:
       type: string
@@ -25,7 +25,7 @@ properties:
   image:
     type: string
     description: Lien vers l'image d'entête pour l'article
-  categories:
+  tags:
     type: array
     description: Liste de catégories reliées à l'article
     items:
