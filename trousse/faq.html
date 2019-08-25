@@ -1,6 +1,6 @@
 ---
 layout: default
-stylesheets: 
+stylesheets:
     - faq.css
 ---
 <script>
@@ -20,13 +20,13 @@ stylesheets:
         if (reponse.classList.contains(hiddenClass)) {
             // Montrer la réponse.
             reponse.classList.remove(hiddenClass);
-            
+
             removeBtnClass = plusClass;
             addBtnClass = minusClass;
         } else {
             // Cacher la réponse.
             reponse.classList.add(hiddenClass);
-            
+
             removeBtnClass = minusClass;
             addBtnClass = plusClass;
         }
