@@ -3,26 +3,26 @@ title: Article
 description: Informations sur une conférence
 type: object
 required:
-  - date 
-  - nom 
+  - date
+  - nom
   - description
   - content
-  - image 
-  - categories 
+  - image
+  - categories
 properties:
-  date: 
+  date:
       type: string
       description: Date de publication de l'article
-  nom:
+  title:
     type: string
-    description: Nom de la source
+    description: Titre de l'article
   description:
     type: string
     description: Résumé de l'article, rédigé en texte brut
-  content: 
+  content:
     type: string
     description: Contenu de l'article, rédigé en Markdown
-  image: 
+  image:
     type: string
     description: Lien vers l'image d'entête pour l'article
   categories:
