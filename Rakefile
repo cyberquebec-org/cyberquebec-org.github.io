@@ -21,4 +21,8 @@ end
 
 desc "Tous les tests du site"
 namespace :tests do
+    desc "Test la configuration du site"
+    task :config do
+        sh "bundle exec jekyll doctor"
+    end
 end
