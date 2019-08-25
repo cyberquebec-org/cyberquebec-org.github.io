@@ -37,3 +37,6 @@ namespace :tests do
         sh "bundle exec jekyll doctor"
     end
 end
+
+desc "Exécute tous les tests"
+task :tests => ["tests:config", "tests:schemas", "tests:liens"]
