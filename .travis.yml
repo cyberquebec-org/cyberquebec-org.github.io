@@ -11,6 +11,7 @@ jobs:
   include:
     - stage: build
       script:
+        - if [ ${TRAVIS_BRANCH} == production]; then export JEKYLL_ENV=production; fi
         - bundle exec jekyll build -d public
     - stage: test
       script:
