@@ -14,12 +14,15 @@ before_script:
 jobs:
   include:
     - stage: test
+      name: JSON Schemas
       script:
         - bundle exec rake tests:schemas
     - stage: test
+      name : Liens
       script:
         - bundle exec rake tests:liens_public
     - stage: deploy
+      name: Déploiement de production
       deploy:
         local_dir: public
         target_branch: master
