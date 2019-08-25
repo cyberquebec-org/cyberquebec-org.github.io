@@ -7,7 +7,7 @@ type: organisme-international
 partenaires:
     Police de la ville de Londres: https://www.cityoflondon.police.uk/
     Bureau du procureur du district de Manhattan: https://manhattanda.org
-    CIS: /trousse/sources/cis
+    CIS: /trousse/sources/cisecurity
 categories: []
 ---
 Cette organisation internationale fut fondée afin de faire de la sensibilisation à la cybersécurité après avoir fait la réalisation que, surtout en cybersécurité, il vaut mieux prévenir que guérir. Elle fait des recherches sur les incidents de cybersécurité, créée et encourage certaines initiatives, créée des ressources pour sensibiliser les entreprises à la cybersécurité et développent des outils de cybersécurité.
