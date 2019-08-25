@@ -1,0 +1,30 @@
+$schema: http://json-schema.org/draft-07/schema#
+title: Pratique
+description: Pratique cybersécuritaire à adopter
+type: object
+required: []
+  # - title
+  # - description
+  # - niveau
+  # - tags
+properties:
+  title:
+    type: string
+    description: Nom de la pratique
+  description:
+    type: string
+    description: Résumé de la pratique, rédigé en markdown
+  content:
+    type: string
+    description: Description détaillée de la pratique, rédigée en Markdown
+  niveau:
+    type: string
+    enum:
+      - bouclier
+      - securitaire
+      - fortress
+  tags:
+    type: array
+    description: Liste de catégories reliées à l'article
+    items:
+      type: string
