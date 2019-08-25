@@ -1,15 +1,15 @@
 - nom: github
   lien: https://github.com/cyberquebec-org
   icone: fa-github
-- nom: twitter
-  lien: https://twitter.com/cyberquebec-org
-  icone: fa-twitter
+#- nom: twitter
+#  lien: https://twitter.com/cyberquebec-org
+#  icone: fa-twitter
 - nom: facebook
   lien: https://www.facebook.com/cyberquebec.org/
   icone: fa-facebook
-- nom: linkedin
-  lien: https://linkedin.com/cyberquebec-org
-  icone: fa-linkedin
+# - nom: linkedin
+#  lien: https://linkedin.com/cyberquebec-org
+#  icone: fa-linkedin
 - nom: email
   lien: mailto:info@cyberquebec.org
   icone: fa-envelope
