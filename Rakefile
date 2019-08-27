@@ -29,7 +29,7 @@ namespace :tests do
     desc "Test tous les liens avec jekyll-link-checker en mode verbose" \
          "dans le dossier public"
     task :liens_public do
-        sh "bundle exec jekyll-link-checker --verbose -s public"
+        sh "bundle exec jekyll-link-checker --verbose -d public"
     end
 
     desc "Test la configuration du site"
