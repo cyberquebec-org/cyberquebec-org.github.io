@@ -1,4 +1,6 @@
 # CyberQuebec.org [WIP]
+[![Build Status](https://travis-ci.org/cyberquebec-org/cyberquebec-org.github.io.svg?branch=source)](https://travis-ci.org/cyberquebec-org/cyberquebec-org.github.io)
+
 Pour des raisons de sécurité et de performances, le site Internet de CyberQuebec.org utilise [Jekyll], un générateur de sites statiques.
 
 # Comment développer le site localement
