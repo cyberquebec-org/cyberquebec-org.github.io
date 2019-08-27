@@ -30,6 +30,10 @@ jekyll-minifier:
   uglifier_args:
     harmony: true # Permet d'utiliser la syntaxe ES6
 
+link-checker:
+  skip-list:
+    - https://haveibeenpwned.com/
+
 collections:
   sources:
     layout: source
