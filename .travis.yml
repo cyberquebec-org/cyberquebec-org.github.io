@@ -23,7 +23,8 @@ jobs:
         - bundle exec rake tests:liens_public
     - stage: deploy
       name: Déploiement de production
-      script: []
+      script:
+        - echo "Déploiement"
       deploy:
         local_dir: public
         target_branch: master
