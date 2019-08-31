@@ -1,6 +1,14 @@
+{% if site.active_lang == 'fr' %}
+    {% assign autre_lang = 'EN' %}
+    {% assign lien_traduit = page.url | prepend: '/en' | relative_url %}
+{% else %}
+    {% assign autre_lang = 'FR' %}
+    {% assign lien_traduit = page.url | remove_first: '/en' | relative_url %}
+{% endif %}
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="{{ '/' | relative_url }}">
-        <img src="{{ 'assets/images/cyberqc.webp' | relative_url }}" alt="CyberQuebec.org" class="brand-image">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}" style="max-width: 65%;">
+        <img src="{{ 'assets/images/cyberqc.webp' | relative_url }}" alt="CyberQuebec.org" class="brand-image mw-100" style="object-fit: contain;">
     </a>
 
     {%- if jekyll.environment != "production" -%}
@@ -9,7 +17,7 @@
         </a>
     {%- endif -%}
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -37,12 +45,9 @@
                 </li>
                 {% endif %}
             {% endfor %}
-        </ul>
 
-        {% if site.active_lang == 'fr' %}
-            <a href=" {{ page.url | prepend: '/en' | relative_url }}" class="nav-link">EN</a>
-        {% else %}
-            <a href=" {{ page.url | remove_first: '/en' | relative_url }}" class="nav-link">FR</a>
-        {% endif %}
+            <a href=" {{ lien_traduit }}" class="nav-link d-sm-none">{{ autre_lang }}</a>
+        </ul>
     </div>
+    <a href=" {{ lien_traduit }}" class="nav-link d-none d-sm-inline">{{ autre_lang }}</a>
 </nav>
