@@ -7,7 +7,7 @@ install:
   - bundle install
 
 before_script:
-  - if [ ${TRAVIS_BRANCH} == production]; then export JEKYLL_ENV=production; fi
+  - if [ "$TRAVIS_BRANCH" == "production" ]; then export JEKYLL_ENV=production; fi
   - bundle exec jekyll build -d public
 
 # https://docs.travis-ci.com/user/build-stages
