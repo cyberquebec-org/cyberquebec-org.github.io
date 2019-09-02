@@ -7,12 +7,8 @@ stylesheets:
     <div class="row justify-content-center bg-secondary">
         <img class="col-12 col-md-8" src="{{ '/assets/images/banner.webp' | relative_url }}">
         <div class="col-10 col-md-4 my-auto py-3">
-            <p class="lead mx-2">{{ page.description }}</p>
-            <div class="row mx-2">
-                {% for tag in page.tags %}
-                <a class="badge bg-info" href="#">{{ site.data.tags[tag] }}</a>
-                {% endfor %}
-            </div>
+            <p class="lead">{{ page.description }}</p>
+            {% include tag-row.html tags=page.tags tags-url='#' tag-names=site.data.blog.tags %}
         </div>
     </div>
 </div>

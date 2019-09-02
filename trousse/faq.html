@@ -62,11 +62,7 @@ stylesheets:
                     </a>
                 </div>
                 <div class="reponse overflow-hidden hidden">{{ element.content | markdownify }}</div>
-                <div class="overflowy-auto">
-                    {% for categorie in element.categories %}
-                    <span class="badge bg-info">{{ categorie }}</span>
-                    {% endfor %}
-                </div>
+                {% include tag-row.html tags=element.categories tags-url='#' tag-names=site.data.faq.categories %}
             </div>
         {% endfor %}
     </div>

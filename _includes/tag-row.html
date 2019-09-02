@@ -1,0 +1,7 @@
+<div class="row m-0">
+    {% for tag in include.tags %}
+    <a class="badge bg-info mr-2" href="{{ tag | prepend: include.tags-url | relative_url }}">
+        {{ include.tag-names[tag] }}
+    </a>
+    {% endfor %}
+</div>
