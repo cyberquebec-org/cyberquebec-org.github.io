@@ -4,37 +4,29 @@ stylesheets:
     - sources.css
 data-spy: true
 ---
-{% assign categories = "!$%&, 0-9, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z" | split: ', ' %}
-{% assign sources = site.sources | sources_alphabetiques %}
-
+{% assign sources = site.sources | where: 'lang', site.active_lang | sources_alphabetiques | sort_by %}
 <div class="row">
     <!-- placeholder pour le panneau de sources -->
     <div class="col-12 col-md-3"></div>
     <div id="nav-sources" class="flex-row flex-md-column position-fixed col-12 col-md-3">
         <nav class="nav nav-pills flex-row flex-md-column bg-secondary" style="z-index: 0;">
-            {% for categorie in categories %}
-                {% assign groupe = sources[categorie] %}
-                {% if groupe and groupe.size != 0 %}
-                    <a class="nav-link" href="#{{ categorie }}">{{ categorie }}</a>
-                    {% if forloop.last == false %}
-                        <hr class="mx-3 my-0"></hr>
-                    {% endif %}
+            {% for categorie in sources %}
+                <a class="nav-link" href="#{{ categorie[0] }}">{{ categorie[0] }}</a>
+                {% if forloop.last == false %}
+                    <hr class="mx-3 my-0"></hr>
                 {% endif %}
             {% endfor %}
         </nav>
     </div>
     <div class="col liste-sources" data-spy="scroll" data-target="#nav-sources" data-offset="0">
-        {% for categorie in categories %}
-            {% assign groupe = sources[categorie] | where: 'lang', site.active_lang %}
-            {% if groupe and groupe.size != 0 %}
-                <h1 id="{{ categorie }}">{{ categorie }}</h1>
-                {% for source in groupe %}
-                    <a href="{{ source.url }}">
-                        <h2>{{ source.title }}</h2>
-                        <a href="{{ source.lien }}">{{ source.lien }}</a>
-                    </a>
-                {% endfor %}
-            {% endif %}
+        {% for categorie in sources %}
+            <h1 id="{{ categorie[0] }}">{{ categorie[0] }}</h1>
+            {% for source in categorie[1] %}
+                <a href="{{ source.url }}">
+                    <h2>{{ source.title }}</h2>
+                    <a href="{{ source.lien }}">{{ source.lien }}</a>
+                </a>
+            {% endfor %}
         {% endfor %}
     </div>
 </div>

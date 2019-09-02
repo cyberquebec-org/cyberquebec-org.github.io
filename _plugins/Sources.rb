@@ -10,7 +10,7 @@ module Jekyll
       sources.sort_by! do |source|
         source[PROP_TITRE]
       end
-      sources.group_by do |source|
+      groupes = sources.group_by do |source|
         char = Utils.slugify(source[PROP_TITRE][0], mode: 'latin')
         if ALPHABET.include?(char)
         then char
@@ -19,6 +19,7 @@ module Jekyll
         else '!$%&'
         end
       end
+      groupes.sort_by {|cle| cle }
     end
   end
 end
