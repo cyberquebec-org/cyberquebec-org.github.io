@@ -1,6 +1,10 @@
 <div class="row m-0">
     {% for tag in include.tags %}
-    <a class="badge bg-info mr-2" href="{{ tag | prepend: include.tags-url | relative_url }}">
+    {% assign href = tag | prepend: include.tags-url %}
+    {% if include.tags-url != '#' %}
+        {% assign href = href | relative_url %}
+    {% endif %}
+    <a class="badge bg-info mr-2" href="{{ href }}">
         {{ include.tag-names[tag] }}
     </a>
     {% endfor %}
