@@ -6,7 +6,7 @@ stylesheets:
 ---
 <div class="container my-3">
     <h1 class="w-100 mb-3">{{ site.data.contact.title }}</h1>
-    <div class="row flex-row-reverse justify-content-center">
+    <div class="row flex-row-reverse justify-content-center m-0">
         <div class="row justify-content-around align-content-around col-12 col-lg-6 mb-3">
             {% for item in site.data.contact.items %}
             <div class="col-6 text-center{% if forloop.index != 0 %} mt-3{% endif %}">
