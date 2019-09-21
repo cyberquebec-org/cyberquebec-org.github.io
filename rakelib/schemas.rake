@@ -72,6 +72,9 @@ namespace :tests do
       end.each do |fichier|
         begin
           parsed = FrontMatterParser::Parser.parse_file(fichier)
+
+          next if parsed.front_matter['skip-schema-check']
+
           parsed.front_matter['content'] = parsed.content
           erreurs = schemer.validate(parsed.front_matter).entries
           if !erreurs.empty?
