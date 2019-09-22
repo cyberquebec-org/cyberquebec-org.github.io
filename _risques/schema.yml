@@ -2,11 +2,12 @@ $schema: http://json-schema.org/draft-07/schema#
 title: Risque
 description: Risque de cybersécurité
 type: object
-required: []
-  # - title
-  # - description
-  # - niveau
-  # - tags
+required:
+  - title
+  - description
+  - content
+  - cibles
+  - tags
 properties:
   title:
     type: string
