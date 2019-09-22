@@ -1,0 +1,11 @@
+title: Risques
+description: |
+  Description des risques
+
+cibles:
+  individus:
+    nom: Individuals
+  entreprises:
+    nom: Gompanies
+tags:
+  vie-privee: Privacy

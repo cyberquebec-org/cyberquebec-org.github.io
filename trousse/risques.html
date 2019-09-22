@@ -1,4 +1,17 @@
 ---
 layout: default
-section: risques
+title: :risques.title
+description: :risques.description
+stylesheets:
+  - risques.css
 ---
+<h1>{{ site.data.risques.title }}</h1>
+<div class="lead">{{ site.data.risques.description | markdownify }}</div>
+{% assign risques = site.risques | where: "lang", site.active_lang %}
+{% for risque in risques %}
+    {% assign risque-id = risque.id | split: '/' | last | slugify %}
+    <div id="{{ risque-id }}" class="element mb-3 risque">
+        <h2><a href="{{ risque.url }}">{{ risque.title }}</a></h2>
+        {% include tag-row.html tags=risque.tags tags-url='#' tag-names=site.data.risques.tags %}
+    </div>
+{% endfor %}

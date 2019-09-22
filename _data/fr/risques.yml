@@ -1,0 +1,13 @@
+title: Risques
+description: |
+  Description des risques
+
+cibles:
+  individus:
+    nom: Individus
+    icone: fa-male
+  entreprises:
+    nom: Entreprises
+    icone: fa-building
+tags:
+  vie-privee: Vie Privée
