@@ -24,24 +24,24 @@ properties:
     items:
       type: string
       description: Code de la langue définie par le standard ISO 639.2 (3 caractères et non 2 comme dans le standard ISO 639.1)
-  dates: 
+  dates:
     oneOf:
       - type: object
-        properties: 
-          debut: 
+        properties:
+          debut:
             type: string
             description: Date de début
-          fin: 
+          fin:
             type: string
             description: Date de fin
       - type: array
-        items: 
+        items:
           type: string
           description: Date de chaque journée de la conférence
       - type: string
         description: Date de la conférence
-  lieu: 
-    type: string 
+  lieu:
+    type: string
     description: Adresse du lieu de la conférence
   partenaires:
     type: array
