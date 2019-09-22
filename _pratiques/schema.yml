@@ -19,6 +19,7 @@ properties:
     description: Description détaillée de la pratique, rédigée en Markdown
   niveau:
     type: string
+    description: Niveau de protection associé à la pratique
     enum:
       - basique
       - superieur
