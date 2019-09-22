@@ -20,9 +20,9 @@ properties:
   niveau:
     type: string
     enum:
-      - bouclier
-      - securitaire
-      - fortress
+      - basique
+      - superieur
+      - premium
   tags:
     type: array
     description: Liste de catégories reliées à l'article
