@@ -19,7 +19,7 @@ module Jekyll
         else '!$%&'
         end
       end
-      groupes.sort_by {|cle| cle }
+      groupes.sort
     end
   end
 end
