@@ -24,6 +24,20 @@ properties:
       - basique
       - superieur
       - premium
+  sources:
+    type: object
+    description: Nom de la source
+    additionalProperties:
+      type: string
+      format: uri
+      description: Liens vers les sources justifiant cette pratiques
+  risques:
+    type: array
+    description: Risques prévenus par cette pratique
+    uniqueItems: true
+    items:
+      type: string
+      description: Nom du fichier du risque (sans l'extension)
   tags:
     type: array
     description: Liste de catégories reliées à l'article
