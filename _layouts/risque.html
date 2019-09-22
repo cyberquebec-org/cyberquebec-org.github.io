@@ -1,0 +1,40 @@
+---
+layout: default
+stylesheets:
+    - risque.css
+---
+<div class="row">
+    <div class="col order-1">
+        <h1>
+            {{ page.title }}
+            {% for _cible in page.cibles %}
+            {% assign cible = site.data.risques.cibles[_cible] %}
+            <i class="fa {{ cible.icone }}" title="{{ cible.nom }}"></i>
+            {% endfor %}
+        </h1>
+        {% include tag-row.html tags=page.tags tags-url='#' tag-names=site.data.risques.tags %}
+        <div class="lead">{{ page.description | markdownify }}</div>
+        <p>{{ content }}</p>
+    </div>
+    <div class="col-12 col-md-4 col-lg-3 order-1">
+        <h2>Pratiques</h2>
+        {% assign id = page.id | split: '/' | last %}
+        {% for pratique in site.pratiques %}
+            {% if pratique.lang != site.active_lang %}
+                {% continue %}
+            {% endif %}
+            {% for risque in pratique.risques %}
+                {% if risque == id %}
+                    <a href="{{ pratique.url }}">{{ pratique.title }}</a>
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+    <div class="col-12 col-lg-3 order-1 order-lg-0">
+        <h2>Sources</h2>
+        {% for source in page.sources %}
+        <a href="{{ source[1] }}">{{ source[0] }}</a>
+        {% endfor %}
+    </div>
+</div>

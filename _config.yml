@@ -77,6 +77,12 @@ defaults:
       layout: source
       stylesheets:
         - sources.css
+  - scope:
+      path: "_risques"
+    values:
+      layout: risque
+      stylesheets:
+        - risque.css
 
 schema-checker:
   skip:
