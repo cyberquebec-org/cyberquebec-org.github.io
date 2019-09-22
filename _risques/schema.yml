@@ -17,7 +17,7 @@ properties:
   content:
     type: string
     description: Description détaillée du risque, rédigée en Markdown
-  cible:
+  cibles:
     type: array
     description: Cibles du risque
     items:
