@@ -1,5 +1,7 @@
 ---
 layout: default
+title: :sources.title
+description: :sources.description
 stylesheets:
     - sources.css
 data-spy: true
@@ -19,11 +21,14 @@ data-spy: true
         </nav>
     </div>
     <div class="col liste-sources" data-spy="scroll" data-target="#nav-sources" data-offset="0">
+        <h1>{{ site.data.sources.title }}</h1>
+        <p class="lead">{{ site.data.sources.description }}</p>
+
         {% for categorie in sources %}
-            <h1 id="{{ categorie[0] }}">{{ categorie[0] }}</h1>
+            <h2 id="{{ categorie[0] }}">{{ categorie[0] }}</h2>
             {% for source in categorie[1] %}
                 <a href="{{ source.url }}">
-                    <h2>{{ source.title }}</h2>
+                    <h4>{{ source.title }}</h4>
                     <a href="{{ source.lien }}">{{ source.lien }}</a>
                 </a>
             {% endfor %}
