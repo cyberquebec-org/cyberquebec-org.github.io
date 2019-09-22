@@ -28,8 +28,7 @@ data-spy: true
             <h2 id="{{ categorie[0] }}">{{ categorie[0] }}</h2>
             {% for source in categorie[1] %}
                 <a href="{{ source.url }}">
-                    <h4>{{ source.title }}</h4>
-                    <a href="{{ source.lien }}">{{ source.lien }}</a>
+                    <h4 class="ml-2">{{ source.title }}</h4>
                 </a>
             {% endfor %}
         {% endfor %}
