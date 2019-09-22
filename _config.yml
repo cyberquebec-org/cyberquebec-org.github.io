@@ -78,6 +78,12 @@ defaults:
       stylesheets:
         - sources.css
   - scope:
+      path: "_pratiques"
+    values:
+      layout: pratique
+      stylesheets:
+        - pratique.css
+  - scope:
       path: "_risques"
     values:
       layout: risque

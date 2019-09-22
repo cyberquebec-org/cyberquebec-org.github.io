@@ -1,0 +1,36 @@
+---
+layout: default
+stylesheets:
+  - pratique.css
+---
+<div class="row">
+    <div class="col order-1">
+        {% assign niveau = site.data.pratiques.niveaux[page.niveau] %}
+        <h1><i class="fa {{ niveau.icone }}" title="{{ niveau.nom }}"></i> {{ page.title }}</h1>
+        {% include tag-row.html tags=page.tags tags-url='#' tag-names=site.data.pratiques.tags %}
+        <div class="lead">{{ page.description }}</div>
+        <div class="mt-2">
+            {{ content }}
+        </div>
+    </div>
+    <div class="col-12 col-md-4 col-lg-3 order-1">
+        <h2>Risques</h2>
+        {% for risque in page.risques %}
+            {% for doc in site.risques %}
+                {% if doc.lang == site.active_lang %}
+                    {% assign id = doc.id | split: '/' | last %}
+                    {% if risque == id %}
+                        <a href="{{ doc.url }}">{{ doc.title }}</a>
+                        {% break %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </div>
+    <div class="col-12 col-lg-3 order-1 order-lg-0">
+        <h2>Sources</h2>
+        {% for source in page.sources %}
+        <a href="{{ source[1] }}">{{ source[0] }}</a>
+        {% endfor %}
+    </div>
+</div>
