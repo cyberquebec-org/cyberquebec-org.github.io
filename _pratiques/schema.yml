@@ -13,7 +13,7 @@ properties:
     description: Nom de la pratique
   description:
     type: string
-    description: Résumé de la pratique, rédigé en markdown
+    description: Résumé de la pratique, rédigée en Markdown
   content:
     type: string
     description: Description détaillée de la pratique, rédigée en Markdown
