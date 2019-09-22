@@ -2,11 +2,12 @@ $schema: http://json-schema.org/draft-07/schema#
 title: Pratique
 description: Pratique cybersécuritaire à adopter
 type: object
-required: []
-  # - title
-  # - description
-  # - niveau
-  # - tags
+required:
+  - title
+  - description
+  - content
+  - niveau
+  - tags
 properties:
   title:
     type: string
