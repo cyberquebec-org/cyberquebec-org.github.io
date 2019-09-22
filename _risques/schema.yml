@@ -17,6 +17,13 @@ properties:
   content:
     type: string
     description: Description détaillée du risque, rédigée en Markdown
+  sources:
+    type: object
+    description: Nom de la source
+    additionalProperties:
+      type: string
+      format: uri
+      description: Liens vers les sources expliquant ce risque
   cibles:
     type: array
     description: Cibles du risque
