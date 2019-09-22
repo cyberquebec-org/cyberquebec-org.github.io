@@ -6,18 +6,18 @@ lang:
     - eng
 type: obnl
 partenaires:
-    Telus: https://example.com
-    Cira: https://example.com
-    Bell: https://example.com
-    Facebook: https://example.com
-    Google: https://example.com
-    TekSavvy: https://example.com
-    Wattpad: https://example.com
-    CCSA: https://example.com
-    ONF-NFB: https://example.com
-    APTN: https://example.com
-    Bell Media: https://example.com
-    Corus: https://example.com
+    Telus: https://www.telus.com/
+    Cira: https://cira.ca/
+    Bell: https://www.bell.ca/
+    Facebook: https://www.facebook.com/
+    Google: https://google.com
+    TekSavvy: https://teksavvy.com/
+    Wattpad: https://www.wattpad.com/
+    CCSA: http://www.ccsaonline.ca/
+    ONF-NFB: https://www.onf.ca/
+    APTN: https://aptn.ca/
+    Bell Media: https://www.bellmedia.ca/
+    Corus: https://www.corusent.com/
 categories:
     - cyberintimidation
     - vie-privee
