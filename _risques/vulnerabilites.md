@@ -1,3 +1,7 @@
+---
+skip-schema-check: true
+---
+
 # CPU
 (Outils sur Linux pour trouver les vulnérabilités de son CPU)
 
