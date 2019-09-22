@@ -28,6 +28,8 @@ properties:
   cibles:
     type: array
     description: Cibles du risque
+    minLength: 1
+    uniqueItems: true
     items:
       type: string
       enum:
@@ -36,5 +38,6 @@ properties:
   tags:
     type: array
     description: Liste de catégories auquelles appartient le risque
+    uniqueItems: true
     items:
       type: string

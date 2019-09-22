@@ -24,6 +24,7 @@ properties:
   categories:
     type: array
     description: Liste de catégories reliées à la question
+    uniqueItems: true
     items:
       type: string
       enum:

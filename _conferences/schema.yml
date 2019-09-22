@@ -21,6 +21,7 @@ properties:
   lang:
     type: array
     description: La liste des langues offertes
+    uniqueItems: true
     items:
       type: string
       description: Code de la langue définie par le standard ISO 639.2 (3 caractères et non 2 comme dans le standard ISO 639.1)
@@ -35,6 +36,7 @@ properties:
             type: string
             description: Date de fin
       - type: array
+        uniqueItems: true
         items:
           type: string
           description: Date de chaque journée de la conférence
@@ -46,6 +48,7 @@ properties:
   partenaires:
     type: array
     description: Partenaires de la conférence
+    uniqueItems: true
     items:
       type: string
       description: Nom du partenaire
@@ -58,6 +61,7 @@ properties:
   categories:
     type: array
     description: Liste de catégories dont la source fait partie
+    uniqueItems: true
     items:
       type: string
       enum:

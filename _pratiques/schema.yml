@@ -42,5 +42,6 @@ properties:
   tags:
     type: array
     description: Liste de catégories reliées à l'article
+    uniqueItems: true
     items:
       type: string
