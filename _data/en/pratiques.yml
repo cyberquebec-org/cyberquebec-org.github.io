@@ -1,0 +1,13 @@
+title: Good Cybersecurity Practices
+description: |
+  Here's a list of pratices to help you stay cybersafe
+
+niveaux:
+  basique:
+    nom: Basic
+  superieur:
+    nom: Superior
+  premium:
+    nom: Premium
+tags:
+  vie-privee: Privacy

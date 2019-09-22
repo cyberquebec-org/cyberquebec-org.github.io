@@ -1,0 +1,16 @@
+title: Bonnes Pratiques de Cybersécurité
+description: |
+  Voici une liste de pratiques cybersécuritaires
+
+niveaux:
+  basique:
+    nom: Basique
+    icone: fa fa-lock
+  superieur:
+    nom: Supérieur
+    icone: fa fa-shield-alt
+  premium:
+    nom: Premium
+    icone: fa fa-fort-awesome
+tags:
+  vie-privee: Vie Privée

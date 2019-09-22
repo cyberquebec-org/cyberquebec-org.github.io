@@ -1,3 +1,18 @@
 ---
 layout: default
+title: :pratiques.title
+description: :pratiques.description
+stylesheets:
+    - pratiques.css
 ---
+<h1>{{ site.data.pratiques.title }}</h1>
+<div class="lead">{{ site.data.pratiques.description | markdownify }}</div>
+{% assign pratiques = site.pratiques | where: "lang", site.active_lang %}
+{% for pratique in pratiques %}
+    {% assign pratique-id = pratique.id | split: '/' | last | slugify %}
+    {% assign pratique-niveau = site.data.pratiques.niveaux[pratique.niveau] %}
+    <div id="{{ pratique-id }}" class="element mb-3 pratique">
+        <h2><a href="{{ pratique.url }}"><i class="{{ pratique-niveau.icone }}" title="{{ pratique-niveau.nom }}"></i> {{ pratique.title }}</a></h2>
+        {% include tag-row.html tags=pratique.tags tags-url='#' tag-names=site.data.pratiques.tags %}
+    </div>
+{% endfor %}
