@@ -33,6 +33,7 @@ jekyll-minifier:
 link-checker:
   skip-list:
     - https://haveibeenpwned.com/
+    - https://teksavvy.com/
 
 collections:
   sources:
