@@ -13,7 +13,7 @@ end
 gem "cssminify2", :git => 'https://github.com/bbbenji/cssminify'
 
 group :test do
-    gem 'jekyll-link-checker', '0.2.0'
+    gem 'jekyll-link-checker', '~> 0.2.1'
 
     gem 'front_matter_parser'
     gem 'json_schemer'
