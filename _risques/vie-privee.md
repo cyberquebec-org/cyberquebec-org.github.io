@@ -1,5 +1,4 @@
 ---
-layout: risque
 title: Protection de la vie privée
 description: Courte description
 cibles:
