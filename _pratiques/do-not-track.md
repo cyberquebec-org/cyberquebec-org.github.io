@@ -4,7 +4,7 @@ description: |
   Ce témoin est une métadonnée envoyée aux sites sur lesquels vous naviguer pour leur demander de ne pas suivre vos activités en ligne.
 niveau: basique
 sources:
-  Vie privée: https://priv.gc.ca/
+  Commissariat à la protection de la vie privée du Canada: https://priv.gc.ca/
 risques:
   - vie-privee
 tags:
