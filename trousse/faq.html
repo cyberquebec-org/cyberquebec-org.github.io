@@ -13,7 +13,7 @@ stylesheets:
         var icone = bouton.children[0];
 
         // Obtenir la réponse.
-        var reponse = bouton.parentElement.parentElement.getElementsByClassName("reponse")[0];
+        var reponse = bouton.parentElement.getElementsByClassName("reponse")[0];
 
         var removeBtnClass;
         var addBtnClass;
@@ -54,17 +54,19 @@ stylesheets:
             {% assign elements = faq | where: 'cible', section.cible %}
             {% for element in elements %}
                 {% assign question-id = element.path | split: '/' | last | split: '.' | first | slugify %}
-                <div id="{{ question-id }}" class="element mb-3">
-                    <div class="d-flex align-items-center">
-                        <button class="btn btn-primary btn-sm mr-2" onclick="toggleReponse(this)">
-                            <i class="fa fa-plus"></i>
-                        </button>
+                <div id="{{ question-id }}" class="element mb-3 d-flex align-items-start">
+                    <button class="btn btn-primary btn-sm mr-2" onclick="toggleReponse(this)">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                    <div class="d-inline">
                         <a href="#{{ question-id }}">
                             <h4 class="question">{{ element.question }}</h4>
                         </a>
+                        {% include tag-row.html tags=element.categories tags-url='#' tag-names=site.data.faq.categories %}
+                        <div class="reponse overflow-hidden hidden">
+                            {{ element.content | markdownify }}
+                        </div>
                     </div>
-                    <div class="reponse overflow-hidden hidden">{{ element.content | markdownify }}</div>
-                    {% include tag-row.html tags=element.categories tags-url='#' tag-names=site.data.faq.categories %}
                 </div>
             {% endfor %}
         </div>
