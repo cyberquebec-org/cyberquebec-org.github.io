@@ -291,4 +291,5 @@ Il serait intéressant de trouver une alternative open source à ce service, mê
 [HTML]: https://www.w3.org/html/
 [CSS]: https://www.w3.org/Style/CSS/
 [SASS]: https://sass-lang.com/
+[SCSS]: https://sass-lang.com/documentation/syntax#scss
 [JS]: https://www.ecma-international.org/publications/standards/Ecma-262.htm
