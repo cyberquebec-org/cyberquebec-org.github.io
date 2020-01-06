@@ -1,15 +1,4 @@
-- nom: Trousse de Cybersécurité
-  lien: /trousse
-  items:
-    - nom: Bonnes pratiques
-      lien: /trousse/pratiques
-    - nom: Risques
-      lien: /trousse/risques
-    - nom: FAQ
-      lien: /trousse/faq
-    - nom: Sources
-      lien: /trousse/sources
 - nom: Nous Joindre
   lien: /contact
-- nom: À Propos
-  lien: /a-propos
+- nom: Bio
+  lien: /bio

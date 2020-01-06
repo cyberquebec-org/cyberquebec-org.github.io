@@ -1,0 +1,54 @@
+title: Bio
+description: Rencontrez les membres du CCTT en Cybersécurité
+telephone: Téléphone
+courriel: Courriel
+membres:
+  François Perron:
+    image: francois-perron.jpg
+    role: Directeur de CyberQuébec.org
+    courriel: francois.perron@cyberquebec.org
+    telephone: '(819) 770-4012 Poste: 3315'
+    description: |
+      François Perron, ing, M.Sc.A. est un enthousiaste de l’innovation technologique, de la sécurité informatique en général et des télécommunications. Très actif dans l’écosystème innovant du Québec, il dirige CyberQuébec.org, le CCTT en Cybersécurité du Cégep de l’Outaouais.
+  Renaud Levesque B. Ing, Poly.:
+    image: renaud-levesque.jpg
+    role: Consultant
+    courriel: renaud.levesque@cyberquebec.org
+    description: |
+      D.G. récemment retraité du Centre Canadien pour la Cybersécurité fondé en Octobre 2018 par le CST. Durant ses 30 années à la Défense Nationale il a été responsable de la recherche, conception, développement, mise en fonction et gestion de nombreux systèmes informatiques et de communications uniques et innovateurs. Il est maintenant très heureux de pouvoir aider à la formation de la relève chez CyberQuébec.
+  Alexandre Lessard B. Ing, ÉTS:
+    image: alexandre-lessard.jpg
+    role: Conseiller Accompagnateur
+    courriel: alexandre.lessard@cyberquebec.org
+    description: |
+       Gradué au Baccalauréat en Génie Électrique à L’École de technologie supérieure (2017), Alexandre Lessard est un enthousiaste de création de contenu autant physique que virtuel. La cybersécurité ayant piqué sa curiosité, Alexandre apprécie le défi de créer efficacement des projets tout en les gardant résistant aux différents types de cyberattaques. Parcourant les différents événement de “Capture The Flag”(CTF), il se garde à jour des différentes nouvelles vulnérabilités. Il s’intéresse aussi entre autre à la création de jeux vidéos (incluant VR et AR) ainsi que l’impression 3D.
+  Nabila Arezki M. Ing:
+    image: nabila-arezki.jpg
+    role: Gestionnaire de Projets
+    courriel: Nabila.Arezki@cyberquebec.org
+    description: |
+      Nabila Arezki, récemment graduée du D.E.S.S en S.T.I à l’UQO. Je possède deux maîtrises, l'une en systèmes informatique et l’autre en parcours image et plurimedia. Enthousiaste, curieuse et passionnée par les sciences et technologies. En juillet 2019, J’ai rejoint l’équipe conviviale et dynamique de CyberQuébec.org, CCTT en cybersécurité du Cégep de l’Outaouais en tant que gestionnaire de projet. La cybersécurité est un sujet qui est en essor, ce qui nous permet au sein de notre équipe d’innover, explorer et chercher des solutions pour toutes situations vulnérables.
+  Christian Belzil-Lacasse MS:
+    image: christian-belzil-lacasse.jpg
+    role: Gestionnaire de Projets
+    courriel: Christian.Belzil-Lacasse@cyberquebec.org
+    description: |
+      Gradué du baccalauréat en Physique et de la maîtrise en Mathématiques appliquées, Christian Belzil-Lacasse enseigne au Cégep de l’Outaouais depuis 2015. En 2019, il sauta sur l’opportunité de se joindre au CCTT en cybersécurité en tant que gestionnaire de projets. La cybersécurité s’avéra être le sujet parfait pour mettre en application sa passion pour la résolution de problèmes par des solutions novatrices, et ce, au sein de l’équipe dynamique du CCTT.
+  Antoine Nolet B. ing, ÉTS:
+    image: antoine-nolet.jpg
+    role: Professeur en Génie Électrique
+    courriel: Antoine.Nolet@cyberquebec.org
+    description: |
+      Diplômé au Baccalauréat en Génie Électrique à L’École de technologie supérieure depuis l’été 2017, Antoine est un touche-à-tout. Sa motivation, il la trouve en cherchant à comprendre expérimentalement le monde qui l’entoure. Pour aller au fond des choses, il est toujours prêt relever les défis qu’il rencontre. La cybersécurité l’intéresse particulièrement puisqu’il s’agit d’un monde où il reste encore beaucoup à découvrir, que ce soit dans la recherche de solutions techniques, la compréhension de certains phénomènes sociaux ou la quantification des risques associées à la cybersécurité.
+  Francis Lance B. ing, ÉTS:
+    image: francis-lance.jpg
+    role: Employé de la Fabrique Mobile
+    courriel: Francis.Lance@cyberquebec.org
+    description: |
+      Diplômé au Baccalauréat en Génie Électrique à L’École de technologie supérieure depuis l’été 2017, Francis est très créatif dans la façon de résoudre les problèmes. Il est enthousiaste et toujours prêt à surmonter les problèmes dont il fait face. Il a joint l’équipe dynamique du CCTT pour participer à la recherche et aux avancements dans le domaine de la cybersécurité.
+  Patrick St-Louis:
+    image: patrick-st-louis.jpg
+    role: Étudiant, Fondateur du Club Étudiant &lt;ECHO&gt;
+    courriel: Patrick.St-Louis@cyberquebec.org
+    description: |
+      Après avoir approfondi les arts culinaires à l’international durant 10 ans, Patrick se voit chercher une nouvelle expertise dans le domaine de la cybersécurité. Principalement motivé par les audits de sécurité offensifs et l’analyse de logiciels, il aime trouver des erreurs de configurations dans des systèmes préexistants et briser des logiciels. C’est ainsi qu’il a débuté ses études en réseautiques et cybersécurité au Cégep de l’Outaouais. En moins d’un an, il a démarré le club de sécurité offensive ECHO et s’est joint au sein de l’équipe CyberQuébec.org.

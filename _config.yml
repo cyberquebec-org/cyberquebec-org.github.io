@@ -13,6 +13,16 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
+
+  # production
+  - a-propos.html
+  - _posts
+  - _risques
+  - _pratiques
+  - _faq
+  - _sources
+  - _conferences
+  - trousse
 keep_files:
   - css
 strict-front-matter: true
@@ -34,6 +44,7 @@ link-checker:
   skip-list:
     - https://haveibeenpwned.com/
     - https://teksavvy.com/
+    - https://www.nce-rce.gc.ca/
 
 collections:
   sources:

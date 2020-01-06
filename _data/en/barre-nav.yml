@@ -1,15 +1,4 @@
-- nom: Cybersecurity Toolkit
-  lien: /trousse
-  items: 
-    - nom: Good practices
-      lien: /trousse/pratiques
-    - nom: Risks
-      lien: /trousse/risques
-    - nom: FAQ
-      lien: /trousse/faq
-    - nom: Sources
-      lien: /trousse/sources
 - nom: Contact Us
   lien: /contact
-- nom: About
-  lien: /a-propos
+- nom: Bio
+  lien: /bio
