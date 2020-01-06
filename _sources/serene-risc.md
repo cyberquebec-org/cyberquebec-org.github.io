@@ -7,7 +7,7 @@ lang:
     - eng
 partenaires:
     Université de Montréal: https://www.umontreal.ca/
-    Réseaux de centres d'excellence: http://www.nce-rce.gc.ca/
+    Réseaux de centres d'excellence: https://www.nce-rce.gc.ca/
 categories:
     - individus
     - menaces
