@@ -1,7 +1,34 @@
---
-layout: default
-title: :contact.title
-stylesheets:
-    - contact.css
 ---
-allo
+layout: default
+title: :bio.title
+---
+<div align="center">
+    <div class="jumbotron card" style="width:fit-content;padding:25px;margin:25px" align="center">
+        <h1 class="display-4">{{ site.data.bio.title }}</h1>
+        <p class="lead">{{ site.data.bio.description }}</p>
+    </div>
+</div>
+<br>
+
+{% for membre in site.data.bio.membres %}
+<div class="card" style="padding:25px; margin:25px">
+    <div class="row">
+        <div class="col-12 col-md-3" align="center">
+            <img src="/assets/images/membres/{{ membre[1].image }}" height="300px" style="border-color: black">
+        </div>
+        <div class="col-12 col-md-9" align="left">
+            <div class="container">
+                <h1>{{ membre[0] }}</h1>
+                <h5>{{ membre[1].role }}</h5>
+                <p>{{ membre[1].description }}</p>
+                <p>
+                    {{ site.data.bio.courriel }}: <a href="mailto:{{ membre[1].courriel }}">{{ membre[1].courriel }}</a>
+                    {% if membre[1].telephone %}
+                    <br>{{ site.data.bio.telephone }}: {{ membre[1].telephone }}
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
