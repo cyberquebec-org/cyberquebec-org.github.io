@@ -15,5 +15,7 @@
   items:
     - nom: Nous Contacter
       lien: /contact
+    - nom: Bio
+      lien: /bio
     - nom: À Propos
       lien: /a-propos

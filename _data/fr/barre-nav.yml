@@ -11,5 +11,7 @@
       lien: /trousse/sources
 - nom: Nous Joindre
   lien: /contact
+- nom: Bio
+  lien: /bio
 - nom: À Propos
   lien: /a-propos

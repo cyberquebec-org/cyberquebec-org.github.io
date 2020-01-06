@@ -34,6 +34,7 @@ link-checker:
   skip-list:
     - https://haveibeenpwned.com/
     - https://teksavvy.com/
+    - https://www.nce-rce.gc.ca/
 
 collections:
   sources:

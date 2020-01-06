@@ -1,0 +1,38 @@
+title: Bio
+description: Rencontrez les membres du CCTT en Cybersécurité
+telephone: Phone
+courriel: Email
+membres:
+  François Perron:
+    role: CyberQuébec.org's Director
+    telephone: '(819) 770-4012 extension: 3315'
+    description: |
+      Traduction anglaise
+  Renaud Levesque B. Ing, Poly.:
+    role: Consultant
+    description: |
+      Traduction anglaise
+  Alexandre Lessard B. Ing, ÉTS:
+    role: Support Counselor
+    description: |
+       Traduction anglaise
+  Nabila Arezki M. Ing:
+    role: Project Manager
+    description: |
+      Traduction anglaise
+  Christian Belzil-Lacasse MS:
+    education: Project Manager
+    description: |
+      Traduction anglaise
+  Antoine Nolet B. ing, ÉTS:
+    role: Electrical Engineering Professor
+    description: |
+      Traduction anglaise
+  Francis Lance B. ing, ÉTS:
+    role: Employee of the Frabrique Mobile
+    description: |
+      Traduction anglaise
+  Patrick St-Louis:
+    role: Student, Founder of the &lt;ECHO&gt; Student Club
+    description: |
+      Traduction anglaise
