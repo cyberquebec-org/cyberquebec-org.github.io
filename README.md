@@ -11,7 +11,7 @@ Chaque commande sera précédée de `pwd$ ` où `pwd` spécifie l'endroit où la
 Le résultat de chaque commande à exécuter sera aussi inscrit sur la ligne suivant la commande et ne débutera pas par `pwd$ `.
 
 ## Installer [Jekyll], [Bundler] et [Rake]
-Pour commencer, vous allez devoir installer [Ruby]. Pour ce faire, allez voir [la documentation](https://www.ruby-lang.org/fr/documentation/installation) qui donne des instruction d'installation pour Linux (Debian, Ubuntu, CentOS, Fedora, RHEL, Gentoo et Arch Linux), MacOS, Windows, Solaris et OpenIndiana.  
+Pour commencer, vous allez devoir installer [Ruby] (V2.6 MINIMUM). Pour ce faire, allez voir [la documentation](https://www.ruby-lang.org/fr/documentation/installation) qui donne des instruction d'installation pour Linux (Debian, Ubuntu, CentOS, Fedora, RHEL, Gentoo et Arch Linux), MacOS, Windows, Solaris et OpenIndiana.  
 
 [Jekyll], [Bundler] et [Rake] peuvent être installés avec cette commande:
 ```sh
