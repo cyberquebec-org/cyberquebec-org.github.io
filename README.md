@@ -63,6 +63,12 @@ Submodule path 'assets/fontawesome': checked out 'ba907eaec40fab01d410c3023a5572
 ```
 Ce projet contient les sous-modules suivants: [Bootstrap] et [FontAwesome].
 
+## Installer les outils de compilation
+il manques quelques outils permettant de bâtir le projet.
+```sh
+sudo apt install build-essential
+```
+
 ## Installer les dépendances
 Grâce à [Bundler], toutes les dépendances du projet peuvent être installées en exécutant:
 ```sh
