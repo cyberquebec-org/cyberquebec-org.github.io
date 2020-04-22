@@ -117,6 +117,12 @@ Use `bundle info [gemname]` to see where a bundled gem is installed.
 ```  
 **Attention, vous aurez peut-être besoin des droits d'administrateurs pour exécuter cette commande.**  
 
+## Installation d'un interpréteur javascript
+Pour pouvoir désservir du code javascript il fait installer un interpréteur.
+```sh
+sudo apt-get install nodejs
+```
+
 ## Ouvrir un serveur pour faire du développement
 Lorsque vous développez le site, vous pouvez exécuter un serveur avec une des deux commandes suivantes:
 ```sh
