@@ -43,7 +43,7 @@ sudo curl -sSL https://get.rvm.io | sudo bash -s stable
 ```
 Configuration de l'environnement du RVM
 ```sh
-sudo source /etc/profile.d/rvm.sh
+source /etc/profile.d/rvm.sh
 ```
 Installation des dépendances
 ```sh
