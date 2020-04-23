@@ -10,6 +10,62 @@ Chaque commande sera précédée de `pwd$ ` où `pwd` spécifie l'endroit où la
 
 Le résultat de chaque commande à exécuter sera aussi inscrit sur la ligne suivant la commande et ne débutera pas par `pwd$ `.
 
+## Installation de Ruby v2.6+
+Essayez en premier d<installer ruby de la manière conventionnelle.
+```sh
+sudo apt-get install ruby
+```
+
+après installation, vérifiez la version
+```sh
+ruby -v
+```
+
+Si la version est 2.6 ou plus grande, vous pouvez passer à laprochaine étape c'est à dire l'installation des gems.
+Si la version est en dessous de 2.6 suivez les prochaines étapes.
+
+Désinstaller ruby
+```sh
+sudo apt remove ruby
+```
+
+Installation de curl
+```sh
+sudo apt-get install curl
+```
+Importation des clés publiques
+```sh
+ADD SOMETHING
+```
+Installation du Ruby Version Manager
+```sh
+sudo curl -sSL https://get.rvm.io | sudo bash -s stable
+```
+Configuration de l'environnement du RVM
+```sh
+sudo source /etc/profile.d/rvm.sh
+```
+Installation des dépendances
+```sh
+sudo rvm requirements
+```
+Affichez la liste des différentes versions disponibles
+```sh
+rvm list known
+```
+Installation de Ruby (l'exemple ici est donné pour installer la version 2.6 mais vous pouvez changer les chiffres de la version pour installer la version désirée)
+```sh
+sudo rvm install 2.6
+```
+s'assurer d'utiliser la bonne version de ruby pour tous les utilisateurs
+```sh
+rvm use 2.6 --default
+```
+Assurez vous d'avoir la bonne version de ruby avec la commande suivante:
+```sh
+ruby -v
+```
+
 ## Installer [Jekyll], [Bundler] et [Rake]
 Pour commencer, vous allez devoir installer [Ruby]. Pour ce faire, allez voir [la documentation](https://www.ruby-lang.org/fr/documentation/installation) qui donne des instruction d'installation pour Linux (Debian, Ubuntu, CentOS, Fedora, RHEL, Gentoo et Arch Linux), MacOS, Windows, Solaris et OpenIndiana.  
 
