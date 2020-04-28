@@ -132,7 +132,7 @@ Ce projet contient les sous-modules suivants: [Bootstrap] et [FontAwesome].
 ## Installer les outils de compilation
 il manques quelques outils permettant de bâtir le projet.
 ```sh
-sudo apt install build-essential
+apt install build-essential
 ```
 
 ## Installer les dépendances
