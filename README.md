@@ -13,7 +13,7 @@ Le résultat de chaque commande à exécuter sera aussi inscrit sur la ligne sui
 ## Installation de Ruby v2.6+
 Essayez en premier d<installer ruby de la manière conventionnelle.
 ```sh
-sudo apt-get install ruby
+sudo apt install ruby
 ```
 
 après installation, vérifiez la version
@@ -26,7 +26,7 @@ Si la version est en dessous de 2.6 suivez les prochaines étapes.
 
 Désinstaller ruby
 ```sh
-apt remove ruby
+sudo apt remove ruby
 ```
 
 Installation de curl
@@ -79,6 +79,8 @@ ruby -v
 Pour commencer, vous allez devoir installer [Ruby]. Pour ce faire, allez voir [la documentation](https://www.ruby-lang.org/fr/documentation/installation) qui donne des instruction d'installation pour Linux (Debian, Ubuntu, CentOS, Fedora, RHEL, Gentoo et Arch Linux), MacOS, Windows, Solaris et OpenIndiana.
 *Si vous avez utilisé RVM pour installer ruby, vous devez être root pour cette commande avec la commande `sudo su`*
 
+**Attention, vous aurez peut-être besoin des droits d'administrateurs pour exécuter cette commande.**
+
 [Jekyll], [Bundler] et [Rake] peuvent être installés avec cette commande:
 ```sh
 *$ gem install jekyll bundler rake
@@ -99,7 +101,7 @@ Installing ri documentation for rake-12.3.3
 Done installing documentation for rake after 0 seconds
 3 gems installed
 ```
-**Attention, vous aurez peut-être besoin des droits d'administrateurs pour exécuter cette commande.**  
+  
 
 ## Avoir une copie locale du projet
 Si vous n'avez pas déjà Git d'installé, vous pouvez l'obtenir pour Linux/Unix, MacOS et Windows [ici](https://git-scm.com/downloads). Une fois installé, [configurez votre nom et votre courriel](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git) avant de continuer.  
@@ -132,11 +134,13 @@ Ce projet contient les sous-modules suivants: [Bootstrap] et [FontAwesome].
 ## Installer les outils de compilation
 il manques quelques outils permettant de bâtir le projet.
 ```sh
-apt install build-essential
+sudo apt install build-essential
 ```
 
 ## Installer les dépendances
 Grâce à [Bundler], toutes les dépendances du projet peuvent être installées en exécutant:
+
+**Attention, vous aurez peut-être besoin des droits d'administrateurs pour exécuter cette commande.**
 ```sh
 site$ bundle install
 Fetching gem metadata from https://rubygems.org/...........
@@ -180,8 +184,7 @@ Using jekyll-polyglot 1.3.1
 Using jekyll-sitemap 1.3.1
 Bundle complete! 4 Gemfile dependencies, 36 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
-```  
-**Attention, vous aurez peut-être besoin des droits d'administrateurs pour exécuter cette commande.**  
+```    
 
 ## Installation d'un interpréteur javascript
 Pour pouvoir désservir du code javascript il fait installer un interpréteur.
