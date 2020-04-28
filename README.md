@@ -39,7 +39,7 @@ sudo gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462
 ```
 Installation du Ruby Version Manager
 ```sh
-sudo curl -sSL https://get.rvm.io | sudo bash -s stable
+curl -sSL https://get.rvm.io | sudo bash -s stable
 ```
 Configuration de l'environnement du RVM
 ```sh
