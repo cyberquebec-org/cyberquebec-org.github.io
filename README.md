@@ -26,7 +26,7 @@ Si la version est en dessous de 2.6 suivez les prochaines étapes.
 
 Désinstaller ruby
 ```sh
-sudo apt remove ruby
+apt remove ruby
 ```
 
 Installation de curl
