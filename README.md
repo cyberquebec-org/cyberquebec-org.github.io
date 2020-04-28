@@ -47,7 +47,7 @@ source /etc/profile.d/rvm.sh
 ```
 Installation des dépendances
 ```sh
-sudo rvm requirements
+rvm requirements
 ```
 Affichez la liste des différentes versions disponibles
 ```sh
