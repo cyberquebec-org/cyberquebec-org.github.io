@@ -76,7 +76,8 @@ ruby -v
 ```
 
 ## Installer [Jekyll], [Bundler] et [Rake]
-Pour commencer, vous allez devoir installer [Ruby]. Pour ce faire, allez voir [la documentation](https://www.ruby-lang.org/fr/documentation/installation) qui donne des instruction d'installation pour Linux (Debian, Ubuntu, CentOS, Fedora, RHEL, Gentoo et Arch Linux), MacOS, Windows, Solaris et OpenIndiana.  
+Pour commencer, vous allez devoir installer [Ruby]. Pour ce faire, allez voir [la documentation](https://www.ruby-lang.org/fr/documentation/installation) qui donne des instruction d'installation pour Linux (Debian, Ubuntu, CentOS, Fedora, RHEL, Gentoo et Arch Linux), MacOS, Windows, Solaris et OpenIndiana.
+*Si vous avez utilisé RVM pour installer ruby, vous devez être root pour cette commande avec la commande `sudo su`*
 
 [Jekyll], [Bundler] et [Rake] peuvent être installés avec cette commande:
 ```sh
