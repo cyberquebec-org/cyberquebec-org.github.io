@@ -58,11 +58,16 @@ rvm list known
 Installation de Ruby (l'exemple ici est donné pour installer la version 2.6 mais vous pouvez changer les chiffres de la version pour installer la version désirée)
 *Pour cette commande vous devez être root*
 ```sh
-sudo su
 rvm install 2.6
 ```
-s'assurer d'utiliser la bonne version de ruby pour tous les utilisateurs
+Quittez le compte root
 ```sh
+exit
+```
+s'assurer d'utiliser la bonne version de ruby pour l'utilisateur
+*À chaque fois que vous changez d'utilisateur, si vous voulez utiliser ruby ou RVM, vous devez refaire la commande source*
+```sh
+source /etc/profile.d/rvm.sh
 rvm use 2.6 --default
 ```
 Assurez vous d'avoir la bonne version de ruby avec la commande suivante:
