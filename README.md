@@ -46,7 +46,9 @@ Configuration de l'environnement du RVM
 source /etc/profile.d/rvm.sh
 ```
 Installation des dépendances
+*Pour cette commande vous devez être root*
 ```sh
+sudo su
 rvm requirements
 ```
 Affichez la liste des différentes versions disponibles
