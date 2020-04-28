@@ -56,8 +56,10 @@ Affichez la liste des différentes versions disponibles
 rvm list known
 ```
 Installation de Ruby (l'exemple ici est donné pour installer la version 2.6 mais vous pouvez changer les chiffres de la version pour installer la version désirée)
+*Pour cette commande vous devez être root*
 ```sh
-sudo rvm install 2.6
+sudo su
+rvm install 2.6
 ```
 s'assurer d'utiliser la bonne version de ruby pour tous les utilisateurs
 ```sh
