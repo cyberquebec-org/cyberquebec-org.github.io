@@ -2,6 +2,54 @@
 [![Build Status](https://travis-ci.org/cyberquebec-org/cyberquebec-org.github.io.svg?branch=dev)](https://travis-ci.org/cyberquebec-org/cyberquebec-org.github.io)
 
 Pour des raisons de sécurité et de performances, le site Internet de CyberQuebec.org utilise [Jekyll], un générateur de sites statiques.
+# Comment développer le site localement sous Windows
+Dans cette section, plusieurs commandes à exécuter dans un terminal sont présentées.
+
+## Installation de Ruby v2.6+
+Allez sur le site officiel de ruby et téléchargez l'installateur.
+```
+https://www.ruby-lang.org/en/
+```
+assurez vous de la bonne version de ruby avec cette commande dans un terminal:
+```sh
+ruby -v
+```
+## Installer [Jekyll], [Bundler] et [Rake]
+[Jekyll], [Bundler] et [Rake] peuvent être installés avec cette commande dans un terminal:
+```sh
+gem install jekyll bundler rake
+```
+Il est nécessaire de faire une petite correction dans l'installation de ces modules sous windows.
+```sh
+gem uninstall eventmachine
+gem install eventmachine --platform ruby
+```
+
+## Avoir une copie locale du projet
+Si vous n'avez pas déjà Git d'installé, vous pouvez l'obtenir pour Linux/Unix, MacOS et Windows [ici](https://git-scm.com/downloads). Une fois installé, [configurez votre nom et votre courriel](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git) avant de continuer.  
+
+Une fois que vous avez installer et configuré Git, vous pouvez cloner le projet à l'aide de la commande.  
+```sh
+projets$ git clone https://github.com/cyberquebec-org/cyberquebec-org.github.io
+```
+Cela créera un nouveau dossier du nom de `cyberquebec-org.github.io` avec tout le code source du site dans le répertoire où vous avez exécuté la commande.
+
+Vous devez ensuite télécharger les sous modules avec la commande:
+```sh
+site$ git submodule update --init
+```
+## Installer les dépendances
+Grâce à [Bundler], toutes les dépendances du projet peuvent être installées en exécutant:
+```sh
+bundle install
+```
+## Ouvrir un serveur pour faire du développement
+Lorsque vous développez le site, vous pouvez exécuter un serveur avec une des deux commandes suivantes:
+```sh
+bundle exec jekyll serve -wol
+# Ou
+rake
+```
 
 # Comment développer le site localement sous Linux
 Dans cette section, plusieurs commandes à exécuter dans un terminal sont présentées.  
