@@ -3,7 +3,7 @@
 
 Pour des raisons de sécurité et de performances, le site Internet de CyberQuebec.org utilise [Jekyll], un générateur de sites statiques.
 
-# Comment développer le site localement
+# Comment développer le site localement sous Linux
 Dans cette section, plusieurs commandes à exécuter dans un terminal sont présentées.  
 
 Chaque commande sera précédée de `pwd$ ` où `pwd` spécifie l'endroit où la commande doit être exécuté. Si sa valeur est `*` (`*$`), vous pouvez exécuter la commande n'importe où. Si elle commence par `projets` (`projets$ `), cela signifie que la commande doit être exécuter dans le dossier qui contient ou va contenir ce projet sur votre ordinateur. Si elle commence par `site` (`site$ `), cela signifie que la commande doit être exécutée à la racine du dossier de projet (pas dans un sous-dossier du dossier de projet).  
