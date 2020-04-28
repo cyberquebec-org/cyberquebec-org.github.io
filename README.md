@@ -30,13 +30,13 @@ Si vous n'avez pas déjà Git d'installé, vous pouvez l'obtenir pour Linux/Unix
 
 Une fois que vous avez installer et configuré Git, vous pouvez cloner le projet à l'aide de la commande.  
 ```sh
-projets$ git clone https://github.com/cyberquebec-org/cyberquebec-org.github.io
+git clone https://github.com/cyberquebec-org/cyberquebec-org.github.io
 ```
 Cela créera un nouveau dossier du nom de `cyberquebec-org.github.io` avec tout le code source du site dans le répertoire où vous avez exécuté la commande.
 
 Vous devez ensuite télécharger les sous modules avec la commande:
 ```sh
-site$ git submodule update --init
+git submodule update --init
 ```
 ## Installer les dépendances
 Grâce à [Bundler], toutes les dépendances du projet peuvent être installées en exécutant:
