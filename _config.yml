@@ -35,6 +35,7 @@ link-checker:
     - https://haveibeenpwned.com/
     - https://teksavvy.com/
     - https://www.nce-rce.gc.ca/
+    - http://www.antifraudcentre-centreantifraude.ca
 
 collections:
   sources:
