@@ -35,7 +35,10 @@ link-checker:
     - https://haveibeenpwned.com/
     - https://teksavvy.com/
     - https://www.nce-rce.gc.ca/
-    - http://www.antifraudcentre-centreantifraude.ca
+    - http://www.antifraudcentre-centreantifraude.ca/reportincident-signalerincident/index-fra.htm
+    - http://www.antifraudcentre-centreantifraude.ca/fraud-escroquerie/online-enligne-fra.htm
+    - http://www.antifraudcentre-centreantifraude.ca/protectyourself-protegezvous/index-fra.htm
+    - https://support.microsoft.com/fr-ca/help/4468242/microsoft-edge-browsing-data-and-privacy-microsoft-privacy
 
 collections:
   sources:
