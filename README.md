@@ -2,13 +2,126 @@
 [![Build Status](https://travis-ci.org/cyberquebec-org/cyberquebec-org.github.io.svg?branch=dev)](https://travis-ci.org/cyberquebec-org/cyberquebec-org.github.io)
 
 Pour des raisons de sécurité et de performances, le site Internet de CyberQuebec.org utilise [Jekyll], un générateur de sites statiques.
+# Comment développer le site localement sous Windows
+Dans cette section, plusieurs commandes à exécuter dans un terminal sont présentées.
 
-# Comment développer le site localement
+## Installation de Ruby v2.6+
+Allez sur le site officiel de ruby et téléchargez l'installateur.
+```
+https://www.ruby-lang.org/en/
+```
+assurez vous de la bonne version de ruby avec cette commande dans un terminal:
+```sh
+ruby -v
+```
+## Installer [Jekyll], [Bundler] et [Rake]
+[Jekyll], [Bundler] et [Rake] peuvent être installés avec cette commande dans un terminal:
+```sh
+gem install jekyll bundler rake
+```
+Il est nécessaire de faire une petite correction dans l'installation de ces modules sous windows.
+```sh
+gem uninstall eventmachine
+gem install eventmachine --platform ruby
+```
+
+## Avoir une copie locale du projet
+Si vous n'avez pas déjà Git d'installé, vous pouvez l'obtenir pour Linux/Unix, MacOS et Windows [ici](https://git-scm.com/downloads). Une fois installé, [configurez votre nom et votre courriel](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git) avant de continuer.  
+
+Une fois que vous avez installer et configuré Git, vous pouvez cloner le projet à l'aide de la commande.  
+```sh
+git clone https://github.com/cyberquebec-org/cyberquebec-org.github.io
+```
+Cela créera un nouveau dossier du nom de `cyberquebec-org.github.io` avec tout le code source du site dans le répertoire où vous avez exécuté la commande.
+
+Vous devez ensuite télécharger les sous modules avec la commande:
+```sh
+git submodule update --init
+```
+## Installer les dépendances
+Grâce à [Bundler], toutes les dépendances du projet peuvent être installées en exécutant:
+```sh
+bundle install
+```
+## Ouvrir un serveur pour faire du développement
+Lorsque vous développez le site, vous pouvez exécuter un serveur avec une des deux commandes suivantes:
+```sh
+bundle exec jekyll serve -wol
+# Ou
+rake
+```
+
+# Comment développer le site localement sous Linux
 Dans cette section, plusieurs commandes à exécuter dans un terminal sont présentées.  
 
 Chaque commande sera précédée de `pwd$ ` où `pwd` spécifie l'endroit où la commande doit être exécuté. Si sa valeur est `*` (`*$`), vous pouvez exécuter la commande n'importe où. Si elle commence par `projets` (`projets$ `), cela signifie que la commande doit être exécuter dans le dossier qui contient ou va contenir ce projet sur votre ordinateur. Si elle commence par `site` (`site$ `), cela signifie que la commande doit être exécutée à la racine du dossier de projet (pas dans un sous-dossier du dossier de projet).  
 
 Le résultat de chaque commande à exécuter sera aussi inscrit sur la ligne suivant la commande et ne débutera pas par `pwd$ `.
+
+## Installation de Ruby v2.6+
+Essayez en premier d<installer ruby de la manière conventionnelle.
+```sh
+sudo apt install ruby
+```
+
+après installation, vérifiez la version
+```sh
+ruby -v
+```
+
+Si la version est 2.6 ou plus grande, vous pouvez passer à laprochaine étape c'est à dire l'installation des gems.
+Si la version est en dessous de 2.6 suivez les prochaines étapes.
+
+Désinstaller ruby
+```sh
+sudo apt remove ruby
+```
+
+Installation de curl
+```sh
+sudo apt-get install curl
+```
+Importation des clés publiques
+```sh
+sudo gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+```
+Installation du Ruby Version Manager
+```sh
+curl -sSL https://get.rvm.io | sudo bash -s stable
+```
+Configuration de l'environnement du RVM
+```sh
+source /etc/profile.d/rvm.sh
+```
+Installation des dépendances
+*Pour cette commande vous devez être root*
+```sh
+sudo su
+rvm requirements
+```
+Affichez la liste des différentes versions disponibles
+```sh
+rvm list known
+```
+Installation de Ruby (l'exemple ici est donné pour installer la version 2.6 mais vous pouvez changer les chiffres de la version pour installer la version désirée)
+*Pour cette commande vous devez être root*
+```sh
+rvm install 2.6
+```
+Quittez le compte root
+```sh
+exit
+```
+s'assurer d'utiliser la bonne version de ruby pour l'utilisateur
+*À chaque fois que vous changez d'utilisateur, si vous voulez utiliser ruby ou RVM, vous devez refaire la commande source*
+```sh
+source /etc/profile.d/rvm.sh
+rvm use 2.6 --default
+```
+Assurez vous d'avoir la bonne version de ruby avec la commande suivante:
+```sh
+ruby -v
+```
 
 ## Installer [Jekyll], [Bundler] et [Rake]
 Pour commencer, vous allez devoir installer [Ruby] (V2.6 MINIMUM). Pour ce faire, allez voir [la documentation](https://www.ruby-lang.org/fr/documentation/installation) qui donne des instruction d'installation pour Linux (Debian, Ubuntu, CentOS, Fedora, RHEL, Gentoo et Arch Linux), MacOS, Windows, Solaris et OpenIndiana.  
@@ -33,7 +146,7 @@ Installing ri documentation for rake-12.3.3
 Done installing documentation for rake after 0 seconds
 3 gems installed
 ```
-**Attention, vous aurez peut-être besoin des droits d'administrateurs pour exécuter cette commande.**  
+  
 
 ## Avoir une copie locale du projet
 Si vous n'avez pas déjà Git d'installé, vous pouvez l'obtenir pour Linux/Unix, MacOS et Windows [ici](https://git-scm.com/downloads). Une fois installé, [configurez votre nom et votre courriel](https://git-scm.com/book/fr/v2/D%C3%A9marrage-rapide-Param%C3%A9trage-%C3%A0-la-premi%C3%A8re-utilisation-de-Git) avant de continuer.  
@@ -63,8 +176,16 @@ Submodule path 'assets/fontawesome': checked out 'ba907eaec40fab01d410c3023a5572
 ```
 Ce projet contient les sous-modules suivants: [Bootstrap] et [FontAwesome].
 
+## Installer les outils de compilation
+il manques quelques outils permettant de bâtir le projet.
+```sh
+sudo apt install build-essential
+```
+
 ## Installer les dépendances
 Grâce à [Bundler], toutes les dépendances du projet peuvent être installées en exécutant:
+
+**Attention, vous aurez peut-être besoin des droits d'administrateurs pour exécuter cette commande.**
 ```sh
 site$ bundle install
 Fetching gem metadata from https://rubygems.org/...........
@@ -108,8 +229,13 @@ Using jekyll-polyglot 1.3.1
 Using jekyll-sitemap 1.3.1
 Bundle complete! 4 Gemfile dependencies, 36 gems now installed.
 Use `bundle info [gemname]` to see where a bundled gem is installed.
-```  
-**Attention, vous aurez peut-être besoin des droits d'administrateurs pour exécuter cette commande.**  
+```    
+
+## Installation d'un interpréteur javascript
+Pour pouvoir désservir du code javascript il fait installer un interpréteur.
+```sh
+sudo apt-get install nodejs
+```
 
 ## Ouvrir un serveur pour faire du développement
 Lorsque vous développez le site, vous pouvez exécuter un serveur avec une des deux commandes suivantes:

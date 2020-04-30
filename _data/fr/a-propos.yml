@@ -5,20 +5,20 @@ description: |
 evenements:
   - nom: Fondation du CCTT
     date: 2018
-    image: /assets/images/banner.webp
+    image: /assets/images/banner.jpg
     description: ""
 
   - nom: Visite de François Legault
     date: 2019
-    image: /assets/images/banner.webp
+    image: /assets/images/banner.jpg
     description: ""
 
   - nom: ACFAS
     date: 2019
-    image: /assets/images/banner.webp
+    image: /assets/images/banner.jpg
     description: ""
 
 partenaires:
   - nom: Synchronex
     lien: https://synchronex.ca
-    image: /assets/images/partenaires/synchronex.webp
+    image: /assets/images/partenaires/synchronex.jpg
