@@ -7,9 +7,9 @@
 - nom: facebook
   lien: https://www.facebook.com/cyberquebec.org/
   icone: fa-facebook
-# - nom: linkedin
-#  lien: https://linkedin.com/cyberquebec-org
-#  icone: fa-linkedin
+- nom: linkedin
+  lien: https://www.linkedin.com/in/cyberquébec-cctt-en-cybersécurité-22238319b
+  icone: fa-linkedin
 - nom: email
   lien: mailto:info@cyberquebec.org
   icone: fa-envelope
