@@ -5,16 +5,21 @@ description: |
 evenements:
   - nom: Fondation du CCTT
     date: 2018
-    image: /assets/images/banner.jpg
+    image: /assets/images/evenements/lancementCCTT.jpg
     description: ""
 
   - nom: Visite de François Legault
-    date: 2019
-    image: /assets/images/banner.jpg
+    date: Août 2019
+    image: /assets/images/evenements/legault.jpg
     description: ""
 
   - nom: ACFAS
     date: 2019
+    image: /assets/images/evenements/acfas.png
+    description: ""
+    
+  - nom: Certification et protection de renseignements personnels pour le ministère de la santé
+    date: Octobre 2019
     image: /assets/images/banner.jpg
     description: ""
 
