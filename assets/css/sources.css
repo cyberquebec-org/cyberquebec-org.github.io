@@ -1,0 +1,1 @@
+main { padding: 16px; } footer { z-index: 2000; } .groupe-sources.collapse { display: flex; } .dropdown-sources { height: 0px; overflow: hidden; } .show .dropdown-sources { height: auto; }
